@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../../utilities/utilities.js"></script>
+	<script src="../../utilities/validator.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Sign Up Form</title>
+	<link  rel="stylesheet" type="text/css" href="signup_form.css">
+</head>
+<body>
+	<form class="signForm">
+		<header>Sign Up Form</header>
+		<input type="text" name="fname" placeholder="First Name">
+		<input type="text" name="lname" placeholder="Last Name">
+		<input type="text" name="email" placeholder="Email">
+		<input type="text" name="dob" placeholder="Birthdate">
+		<input type="password" name="password" placeholder="Password">
+		<input type="submit">
+	</form>
+</body>
+<script src="/utilities/validator.js"></script>
+<script>
+
+	var form = document.querySelector("form");
+	var fname = document.querySelector("input[name=fname]");
+	var lname = document.querySelector("input[name=lname]");
+	var email = document.querySelector("input[name=email]");
+	var dob = document.querySelector("input[name=dob]");
+	var password = document.querySelector("input[name=password]");
+
+	form.addEventListener("submit", function(e){
+		checkEmptyAndCharacterLengthGreater(fname, 2 , e);
+		checkEmptyAndCharacterLengthGreater(lname, 2 , e);
+		checkEmptyAndEmail(email, e);
+		checkEmptyAndDate(dob, e);
+		checkEmptyAndCharacterLengthGreater(password, 8 , e);
+	}, false);
+
+</script>
+</html>

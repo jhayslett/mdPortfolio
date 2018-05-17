@@ -1,0 +1,92 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+	width: 100%;
+	background-color: #4183D7;
+	overflow: hidden;
+}
+
+section {
+	padding: 20px;
+}
+
+.mainList {
+	color: white;
+}
+
+.mainNav {
+	background-color: #4183D7;
+	float: left;
+	height: 25px;
+	padding: 15px 15px 5px 15px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.mainNav a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mainNav a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mainNav:hover {
+	background-color: #446CB3;
+}
+
+.mainNav:active {
+	background-color: #6C7A89;
+}
+
+.button
+ {
+	background-color: #1976D2; 
+	border-radius: 3px; /* make slight border radius */
+	border: none; 
+	color: #fff; 
+	cursor: pointer; /* makes all the cursors the same when hovered even though it's not in the :hover call */
+	display: inline-block; /* putting next to each other in document flow, also since no width is set it made the width based off margin and padding */
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 16px; 
+	margin: 5px; /* add spacing around buttons */
+	padding: 15px 20px; /* add spacing inside button around text */	
+	text-align: center;
+	text-decoration: none; /* remove styling from a tag */
+}
+
+.button:hover {  /*make a element react to hover state */
+	background-color: #BBDEFB;
+	border-color: #ccc;
+}
+
+.button:active {
+	background-color: #1976D2; 
+	border-color: #bbb; 
+}
+
+.button:focus {
+	outline: none;  /* gets rid of blue glow when clicked */
+}
+
+.button-sm {
+	font-size: 12px;
+	padding: 10px 15px;
+}
+
+.button-md {
+	font-size: 16px;
+	padding: 12px 17px;
+}
+
+.button-lg {
+	font-size: 20px;
+	padding: 15px 20px;
+}

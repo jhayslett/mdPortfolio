@@ -1,0 +1,147 @@
+button {
+	outline: none;
+}
+
+html, body {
+  	font-family: 'Open Sans', sans-serif;
+  	margin: 0;
+  	padding: 0;
+}
+
+body {
+  	padding: 0;
+  	background: #546E7A;
+}
+
+.calculator {
+	background: #EDE7F6;
+	border-radius: 3px;
+	border: 1px solid black;
+	box-shadow: 0 5px 13px rgba(25,25,25,.12), 0 4px 8px rgba(25,25,25,.24);
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 25px;
+	overflow: auto;
+	overflow: auto;
+	padding: 15px;
+	position: relative;
+	width: 500px;
+}
+
+.calculator label {
+	background-color: #9575CD;
+	color: white;
+	font-size: 30px;
+	font-weight: 600;
+	left: 0;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.calculator button,
+.calculator input {
+	box-sizing: border-box;
+	float: left;
+	font-size: 22px;
+	height: 75px;
+	outline: none;
+}
+
+
+.calculator button {
+	border: 1px solid #9E9E9E;
+	color: #fff;
+	margin: 1%;
+	width: 23%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); 
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#14000000',GradientType=0 ); 
+	background-color: #795548;
+	transition: all .1s ease;
+}						
+
+.calculator button:hover {
+	background-color: #8D6E63;
+}
+
+.calculator button:active {
+	background-color: #6D4C41;
+}
+
+.calculator input {
+	background: white;
+	letter-spacing: 2.5px;
+	margin: 1%;
+	text-align: right;
+	width: 48%;
+}
+
+/*Hide the arrows on number input*/
+
+.calculator input[type=number]::-webkit-inner-spin-button, 
+.calculator input[type=number]::-webkit-outer-spin-button { 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.calculator button:nth-child(4n+4) {
+	clear: left;
+}
+
+/*Clear Button*/
+
+.calculator button.clear {
+	background-color: #F44336;
+	border: 1px solid #D32F2F;
+	color: #fff;
+}
+
+.calculator button.clear:hover {
+	background-color: #EF5350;
+}
+
+.calculator button.clear:active {
+	background-color: #E53935;
+}
+
+/*Math Symbols*/
+
+.calculator button.symbol {
+	background-color: #8BC34A;
+	border: 1px solid #689F38;
+	color: #fff;
+	font-size: 150%;
+	font-weight: 600;
+}
+
+.calculator button.symbol:hover {
+	background-color: #9CCC65;
+}
+
+.calculator button.symbol:active {
+	background-color: #7CB342;  
+}
+
+/*Equals Sign*/
+
+.calculator button.equals {
+	background-color: #42A5F5;  /*500*/
+	border: 1px solid #0288D1; /*700*/
+	color: #030303;
+	color: #fff;
+	font-size: 300%;
+	font-weight: 600;
+}
+
+.calculator button.equals:hover {
+	background-color: #29B6F6; /*400*/
+}
+
+.calculator button.equals:active {
+	background-color: #039BE5; /*600*/
+}

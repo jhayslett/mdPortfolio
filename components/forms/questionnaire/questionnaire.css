@@ -1,0 +1,115 @@
+html, body {
+	background: #fdfdfd;
+	margin: 0px;
+}
+
+.questionnaire {
+	margin: 10px;
+	min-width: 300px;
+	width: 40%;
+	max-width: 500px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	border: 2px solid #bdbdbd;
+	padding: 20px;
+}
+
+.questionnaire header {
+	font-weight: 600;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.questionnaire input {
+	background: #fdfdfd;
+	border: 0px;
+	border-bottom: 2px solid #bdbdbd;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 14px;
+	letter-spacing: .4px;
+	line-height: 2;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	margin-right: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+.questionnaire label {
+	letter-spacing: 1.2px;
+}
+
+.questionnaire select {
+	border: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: 16px;
+	height: 35px;
+	background: #fdfdfd;
+}
+
+.questionnaire input[type="text"] {
+	margin: 5px;
+	padding: 10px;
+}
+
+.questionnaire input[type="text"]:focus {
+	border-bottom: 2px solid #2196f3;
+	outline: 0px;
+}
+.questionnaire input[type="submit"] {
+	background: #2196f3;
+	border-bottom: 0px;
+	border-radius: 2px;
+	color: #fff;
+	display: block;
+	font-weight: 600;
+	height: auto;
+	letter-spacing: .5px;
+	margin-top: 20px;
+	padding: 5px 15px;
+	vertical-align: middle;
+}
+
+.questionnaire input[type="submit"]:hover {
+	background: #38a1f4;
+}
+
+.questionnaire input[type="submit"]:focus {
+	outline: 0;
+}
+
+.questionnaire input[type="submit"]:active {
+	background: #1e87da;
+}
+
+.questionnaire input[type='radio'] {
+  -webkit-appearance:none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  vertical-align: middle;
+  outline: none;
+}
+
+.questionnaire input[type='radio']:hover {
+  box-shadow: 0 0 5px 0px #38a1f4;
+}
+
+.questionnaire input[type='radio']:before {
+  content:'';
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+}
+
+.questionnaire input[type='radio']:checked:before {
+  background: #2196f3;
+}

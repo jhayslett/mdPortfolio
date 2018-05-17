@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Search Form</title>
+	<link rel="stylesheet" type="text/css" href="search_form.css">
+</head>
+<body>
+	<form class="searchForm">
+	<header>Search for your books!</header>
+		<input type="text" name="books" list="books" autocomplete="on" placeholder="Book Name">
+		<datalist id="books">
+			<option value="12th of Never">
+			<option value="1984">
+			<option value="A Street Cat Named Bob">
+			<option value="A thousand Splendid Suns">
+			<option value="America Psycho">
+			<option value="Animal Farm">
+			<option value="Artemis Fowl">
+			<option value="Being Jordan">
+			<option value="Blood of Dragons">
+			<option value="Bradley Wiggins: An Autobiography">
+			<option value="Bridget Jones’s Diary">
+			<option value="Brief history of time">
+			<option value="Bring up the Bodies">
+			<option value="Call The Midwife: A True Story of the East End in the 1950′s">
+			<option value="Cloud Atlas">
+			<option value="Confessions of a shopaholic">
+			<option value="David Copperfield">
+			<option value="David Walliams">
+			<option value="Diary of Wimpy Kid">
+			<option value="Dracula">
+			<option value="Eloise">
+			<option value="Emma">
+			<option value="Entwined With You">
+			<option value="Far from the Madding Crowd">
+			<option value="Fifty Shades of Grey">
+			<option value="Football! Bloody Hell">
+			<option value="Frank Skinner">
+			<option value="Game of Thrones">
+			<option value="George’s Marvellous Medicine">
+			<option value="Gone Girl">
+			<option value="Great Expectations">
+			<option value="Harry Potter and the Goblet of Fire">
+			<option value="Harry Potter and the Prisoner of Azkaban">
+			<option value="Honest: My Story So Far">
+			<option value="How to be a Woman">
+			<option value="Is It Just Me?">
+			<option value="Jamie’s 15 minute meals">
+			<option value="Kane and Abel">
+			<option value="Life and Laughing">
+			<option value="Life of Pi">
+			<option value="Little Women">
+			<option value="Looking for Alaska">
+			<option value="Lord of the Flies">
+			<option value="Lord of the Rings: Return of the King">
+			<option value="Lord of the Rings: The Two Towers">
+			<option value="Lovely Bones">
+			<option value="Me Before You">
+			<option value="Memoirs of a Geisha">
+			<option value="Men are from Mars Women are from Venus">
+			<option value="Moby Dick">
+			<option value="Mort">
+			<option value="My Animals and Other Family">
+			<option value="My Booky Wook">
+			<option value="My Sisters keeper">
+			<option value="One Day">
+			<option value="One The Road">
+			<option value="Over the Moon: My Autobiography">
+			<option value="Pride and Prejudice">
+			<option value="Ratburger">
+			<option value="Riders">
+			<option value="Romeo and Juliet">
+			<option value="Running My Life">
+			<option value="Secret diary of a call girl">
+			<option value="Silence of the Lambs">
+			<option value="Steve Jobs: The Exclusive Biography">
+			<option value="Still Standing: The Savage Years">
+			<option value="The Autobiography of Jack the Ripper">
+			<option value="The BFG">
+			<option value="The Casual Vacancy">
+			<option value="The Catcher in the Rye">
+			<option value="The Da Vinci Code">
+			<option value="The Girl with the Dragon Tattoo">
+			<option value="The Godfather">
+			<option value="The Hare with Amber Eyes: A Hidden Inheritance">
+			<option value="The Hitchhiker’s Guide to the Galaxy">
+			<option value="The Hobbit">
+			<option value="The Hundred-Year-Old Man who Climbed out of the Window and Disappeared">
+			<option value="The Hunger Games">
+			<option value="The Inside">
+			<option value="The James Bond Archives">
+			<option value="The Kite Runner">
+			<option value="The Lion, The Witch and The Wardrobe">
+			<option value="The Magic Faraway Tree">
+			<option value="The Official Highway Code">
+			<option value="The Perks of Being a Wallflower">
+			<option value="The Picture of Dorian Gray">
+			<option value="The Pillars of the Earth">
+			<option value="The Princess Diaries">
+			<option value="The Snail and the Whale">
+			<option value="The Snow Child">
+			<option value="The Story of Tracy Beaker">
+			<option value="The shining">
+			<option value="Time Travellers Wife">
+			<option value="To Kill a Mockingbird">
+			<option value="We can remember it for you wholesale">
+			<option value="Wolf Hall">
+			<option value="Wonders of the Universe">
+			<option value="World War Z">
+		</datalist>
+		</input>
+		<select name="categories">
+			<option value="">Categories</option>
+			<option value="Classic">Classic</option>
+			<option value="Comic/Graphic novel">Comic/Graphic novel</option>
+			<option value="Crime/Detective">Crime/Detective</option>
+			<option value="Drama">Drama</option>
+			<option value="Fable">Fable</option>
+			<option value="Fairy tale">Fairy tale</option>
+			<option value="Fanfiction">Fanfiction</option>
+			<option value="Fantasy">Fantasy</option>
+			<option value="Fiction in verse">Fiction in verse</option>
+			<option value="Fiction narrative">Fiction narrative</option>
+			<option value="Folklore">Folklore</option>
+			<option value="Historical fiction">Historical fiction</option>
+			<option value="Horror">Horror</option>
+			<option value="Humour">Humour</option>
+			<option value="Legend">Legend</option>
+			<option value="Magical realism ">Magical realism </option>
+			<option value="Metafiction">Metafiction</option>
+			<option value="Mystery">Mystery</option>
+			<option value="Mythology">Mythology</option>
+			<option value="Mythopoeia">Mythopoeia</option>
+			<option value="Realistic fiction">Realistic fiction</option>
+			<option value="Science fiction">Science fiction</option>
+			<option value="Short story">Short story</option>
+			<option value="Suspense/Thriller">Suspense/Thriller</option>
+			<option value="Tall tale">Tall tale</option>
+			<option value="Western">Western</option>
+		</select>
+		<input type="submit" name="submit">
+	</form>
+</body>
+<script src="/utilities/validator.js"></script>
+<script>
+
+// GATHER AND DEFINE ALL HTML ELEMENTS
+
+var form = document.querySelector("form");
+var formBooks = document.querySelector("input");
+var formCategories = document.querySelector("select");
+
+// ACTION TO VALIDATE ON SUBMIT BUTTON CLICK
+
+form.addEventListener("submit", function(e){
+	
+	checkNotEmpty(formBooks, e);
+	checkNotEmpty(formCategories, e);
+
+}, false);
+
+</script>
+</html>

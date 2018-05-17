@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Schedule</title>
+	<link rel="stylesheet" type="text/css" href="schedule.css">
+</head>
+<body>
+	<form class="schedule">
+		<label>Date:<input type="date" name="date"></label>
+		<label>Time:<input type="time" name="time"></label>
+		<label>Timezone:<select name="timezone">
+			<option value="">Please Select</option>
+			<option value="ACDT - UTC+10:30">ACDT - UTC+10:30</option>
+			<option value="ACST - UTC+09:30">ACST - UTC+09:30</option>
+			<option value="ACT - UTC−05">ACT - UTC−05</option>
+			<option value="ACT - UTC+06:30 - UTC+09">ACT - UTC+06:30 - UTC+09</option>
+			<option value="ADT - UTC−03">ADT - UTC−03</option>
+			<option value="AEDT - UTC+11">AEDT - UTC+11</option>
+			<option value="AEST - UTC+10">AEST - UTC+10</option>
+			<option value="AFT - UTC+04:30">AFT - UTC+04:30</option>
+			<option value="AKDT - UTC−08">AKDT - UTC−08</option>
+			<option value="AKST - UTC−09">AKST - UTC−09</option>
+			<option value="AMST - UTC−03">AMST - UTC−03</option>
+			<option value="AMT - UTC−04">AMT - UTC−04</option>
+			<option value="AMT - UTC+04">AMT - UTC+04</option>
+			<option value="ART - UTC−03">ART - UTC−03</option>
+			<option value="AST - UTC+03">AST - UTC+03</option>
+			<option value="AST - UTC−04">AST - UTC−04</option>
+			<option value="AWST - UTC+08">AWST - UTC+08</option>
+			<option value="AZOST - UTC±00">AZOST - UTC±00</option>
+			<option value="AZOT - UTC−01">AZOT - UTC−01</option>
+			<option value="AZT - UTC+04">AZT - UTC+04</option>
+			<option value="BDT - UTC+08">BDT - UTC+08</option>
+			<option value="BIOT - UTC+06">BIOT - UTC+06</option>
+			<option value="BIT - UTC−12">BIT - UTC−12</option>
+			<option value="BOT - UTC−04">BOT - UTC−04</option>
+			<option value="BRST - UTC−02">BRST - UTC−02</option>
+			<option value="BRT - UTC−03">BRT - UTC−03</option>
+			<option value="BST - UTC+06">BST - UTC+06</option>
+			<option value="BST - UTC+11">BST - UTC+11</option>
+			<option value="BST - UTC+01">BST - UTC+01</option>
+			<option value="BTT - UTC+06">BTT - UTC+06</option>
+			<option value="CAT - UTC+02">CAT - UTC+02</option>
+			<option value="CCT - UTC+06:30">CCT - UTC+06:30</option>
+			<option value="CDT - UTC−05">CDT - UTC−05</option>
+			<option value="CDT - UTC−04">CDT - UTC−04</option>
+			<option value="CEST - UTC+02">CEST - UTC+02</option>
+			<option value="CET - UTC+01">CET - UTC+01</option>
+			<option value="CHADT - UTC+13:45">CHADT - UTC+13:45</option>
+			<option value="CHAST - UTC+12:45">CHAST - UTC+12:45</option>
+			<option value="CHOT - UTC+08">CHOT - UTC+08</option>
+			<option value="CHOST - UTC+09">CHOST - UTC+09</option>
+			<option value="CHST - UTC+10">CHST - UTC+10</option>
+			<option value="CHUT - UTC+10">CHUT - UTC+10</option>
+			<option value="CIST - UTC−08">CIST - UTC−08</option>
+			<option value="CIT - UTC+08">CIT - UTC+08</option>
+			<option value="CKT - UTC−10">CKT - UTC−10</option>
+			<option value="CLST - UTC−03">CLST - UTC−03</option>
+			<option value="CLT - UTC−04">CLT - UTC−04</option>
+			<option value="COST - UTC−04">COST - UTC−04</option>
+			<option value="COT - UTC−05">COT - UTC−05</option>
+			<option value="CST - UTC−06">CST - UTC−06</option>
+			<option value="CST - UTC+08">CST - UTC+08</option>
+			<option value="ACST - UTC+09:30">ACST - UTC+09:30</option>
+			<option value="ACDT - UTC+10:30">ACDT - UTC+10:30</option>
+			<option value="CST - UTC−05">CST - UTC−05</option>
+			<option value="CT - UTC+08">CT - UTC+08</option>
+			<option value="CVT - UTC−01">CVT - UTC−01</option>
+			<option value="CWST - UTC+08:45">CWST - UTC+08:45</option>
+			<option value="CXT - UTC+07">CXT - UTC+07</option>
+			<option value="DAVT - UTC+07">DAVT - UTC+07</option>
+			<option value="DDUT - UTC+10">DDUT - UTC+10</option>
+			<option value="DFT - UTC+01">DFT - UTC+01</option>
+			<option value="EASST - UTC−05">EASST - UTC−05</option>
+			<option value="EAST - UTC−06">EAST - UTC−06</option>
+			<option value="EAT - UTC+03">EAT - UTC+03</option>
+			<option value="ECT - UTC−04">ECT - UTC−04</option>
+			<option value="ECT - UTC−05">ECT - UTC−05</option>
+			<option value="EDT - UTC−04">EDT - UTC−04</option>
+			<option value="AEDT - UTC+11">AEDT - UTC+11</option>
+			<option value="EEST - UTC+03">EEST - UTC+03</option>
+			<option value="EET - UTC+02">EET - UTC+02</option>
+			<option value="EGST - UTC±00">EGST - UTC±00</option>
+			<option value="EGT - UTC−01">EGT - UTC−01</option>
+			<option value="EIT - UTC+09">EIT - UTC+09</option>
+			<option value="EST - UTC−05">EST - UTC−05</option>
+			<option value="AEST - UTC+10">AEST - UTC+10</option>
+			<option value="FET - UTC+03">FET - UTC+03</option>
+			<option value="FJT - UTC+12">FJT - UTC+12</option>
+			<option value="FKST - UTC−03">FKST - UTC−03</option>
+			<option value="FKT - UTC−04">FKT - UTC−04</option>
+			<option value="FNT - UTC−02">FNT - UTC−02</option>
+			<option value="GALT - UTC−06">GALT - UTC−06</option>
+			<option value="GAMT - UTC−09">GAMT - UTC−09</option>
+			<option value="GET - UTC+04">GET - UTC+04</option>
+			<option value="GFT - UTC−03">GFT - UTC−03</option>
+			<option value="GILT - UTC+12">GILT - UTC+12</option>
+			<option value="GIT - UTC−09">GIT - UTC−09</option>
+			<option value="GMT - UTC±00">GMT - UTC±00</option>
+			<option value="GST - UTC−02">GST - UTC−02</option>
+			<option value="GST - UTC+04">GST - UTC+04</option>
+			<option value="GYT - UTC−04">GYT - UTC−04</option>
+			<option value="HADT - UTC−09">HADT - UTC−09</option>
+			<option value="HAEC - UTC+02">HAEC - UTC+02</option>
+			<option value="HAST - UTC−10">HAST - UTC−10</option>
+			<option value="HKT - UTC+08">HKT - UTC+08</option>
+			<option value="HMT - UTC+05">HMT - UTC+05</option>
+			<option value="HOVST - UTC+08">HOVST - UTC+08</option>
+			<option value="HOVT - UTC+07">HOVT - UTC+07</option>
+			<option value="ICT - UTC+07">ICT - UTC+07</option>
+			<option value="IDT - UTC+03">IDT - UTC+03</option>
+			<option value="IOT - UTC+03">IOT - UTC+03</option>
+			<option value="IRDT - UTC+04:30">IRDT - UTC+04:30</option>
+			<option value="IRKT - UTC+08">IRKT - UTC+08</option>
+			<option value="IRST - UTC+03:30">IRST - UTC+03:30</option>
+			<option value="IST - UTC+05:30">IST - UTC+05:30</option>
+			<option value="IST - UTC+01">IST - UTC+01</option>
+			<option value="IST - UTC+02">IST - UTC+02</option>
+			<option value="JST - UTC+09">JST - UTC+09</option>
+			<option value="KGT - UTC+06">KGT - UTC+06</option>
+			<option value="KOST - UTC+11">KOST - UTC+11</option>
+			<option value="KRAT - UTC+07">KRAT - UTC+07</option>
+			<option value="KST - UTC+09">KST - UTC+09</option>
+			<option value="LHST - UTC+10:30">LHST - UTC+10:30</option>
+			<option value="LHST - UTC+11">LHST - UTC+11</option>
+			<option value="LINT - UTC+14">LINT - UTC+14</option>
+			<option value="MAGT - UTC+12">MAGT - UTC+12</option>
+			<option value="MART - UTC−09:30">MART - UTC−09:30</option>
+			<option value="MAWT - UTC+05">MAWT - UTC+05</option>
+			<option value="MDT - UTC−06">MDT - UTC−06</option>
+			<option value="MET - UTC+01">MET - UTC+01</option>
+			<option value="MEST - UTC+02">MEST - UTC+02</option>
+			<option value="MHT - UTC+12">MHT - UTC+12</option>
+			<option value="MIST - UTC+11">MIST - UTC+11</option>
+			<option value="MIT - UTC−09:30">MIT - UTC−09:30</option>
+			<option value="MMT - UTC+06:30">MMT - UTC+06:30</option>
+			<option value="MSK - UTC+03">MSK - UTC+03</option>
+			<option value="MST - UTC+08">MST - UTC+08</option>
+			<option value="MST - UTC−07">MST - UTC−07</option>
+			<option value="MUT - UTC+04">MUT - UTC+04</option>
+			<option value="MVT - UTC+05">MVT - UTC+05</option>
+			<option value="MYT - UTC+08">MYT - UTC+08</option>
+			<option value="NCT - UTC+11">NCT - UTC+11</option>
+			<option value="NDT - UTC−02:30">NDT - UTC−02:30</option>
+			<option value="NFT - UTC+11">NFT - UTC+11</option>
+			<option value="NPT - UTC+05:45">NPT - UTC+05:45</option>
+			<option value="NST - UTC−03:30">NST - UTC−03:30</option>
+			<option value="NT - UTC−03:30">NT - UTC−03:30</option>
+			<option value="NUT - UTC−11">NUT - UTC−11</option>
+			<option value="NZDT - UTC+13">NZDT - UTC+13</option>
+			<option value="NZST - UTC+12">NZST - UTC+12</option>
+			<option value="OMST - UTC+06">OMST - UTC+06</option>
+			<option value="ORAT - UTC+05">ORAT - UTC+05</option>
+			<option value="PDT - UTC−07">PDT - UTC−07</option>
+			<option value="PET - UTC−05">PET - UTC−05</option>
+			<option value="PETT - UTC+12">PETT - UTC+12</option>
+			<option value="PGT - UTC+10">PGT - UTC+10</option>
+			<option value="PHOT - UTC+13">PHOT - UTC+13</option>
+			<option value="PKT - UTC+05">PKT - UTC+05</option>
+			<option value="PMDT - UTC−02">PMDT - UTC−02</option>
+			<option value="PMST - UTC−03">PMST - UTC−03</option>
+			<option value="PONT - UTC+11">PONT - UTC+11</option>
+			<option value="PST - UTC−08">PST - UTC−08</option>
+			<option value="PST - UTC+08">PST - UTC+08</option>
+			<option value="PYST - UTC−03">PYST - UTC−03</option>
+			<option value="PYT - UTC−04">PYT - UTC−04</option>
+			<option value="RET - UTC+04">RET - UTC+04</option>
+			<option value="ROTT - UTC−03">ROTT - UTC−03</option>
+			<option value="SAKT - UTC+11">SAKT - UTC+11</option>
+			<option value="SAMT - UTC+04">SAMT - UTC+04</option>
+			<option value="SAST - UTC+02">SAST - UTC+02</option>
+			<option value="SBT - UTC+11">SBT - UTC+11</option>
+			<option value="SCT - UTC+04">SCT - UTC+04</option>
+			<option value="SGT - UTC+08">SGT - UTC+08</option>
+			<option value="SLST - UTC+05:30">SLST - UTC+05:30</option>
+			<option value="SRET - UTC+11">SRET - UTC+11</option>
+			<option value="SRT - UTC−03">SRT - UTC−03</option>
+			<option value="SST - UTC−11">SST - UTC−11</option>
+			<option value="SST - UTC+08">SST - UTC+08</option>
+			<option value="SYOT - UTC+03">SYOT - UTC+03</option>
+			<option value="TAHT - UTC−10">TAHT - UTC−10</option>
+			<option value="THA - UTC+07">THA - UTC+07</option>
+			<option value="TFT - UTC+05">TFT - UTC+05</option>
+			<option value="TJT - UTC+05">TJT - UTC+05</option>
+			<option value="TKT - UTC+13">TKT - UTC+13</option>
+			<option value="TLT - UTC+09">TLT - UTC+09</option>
+			<option value="TMT - UTC+05">TMT - UTC+05</option>
+			<option value="TOT - UTC+13">TOT - UTC+13</option>
+			<option value="TVT - UTC+12">TVT - UTC+12</option>
+			<option value="ULAST - UTC+09">ULAST - UTC+09</option>
+			<option value="ULAT - UTC+08">ULAT - UTC+08</option>
+			<option value="USZ1 - UTC+02">USZ1 - UTC+02</option>
+			<option value="UTC - UTC±00">UTC - UTC±00</option>
+			<option value="UYST - UTC−02">UYST - UTC−02</option>
+			<option value="UYT - UTC−03">UYT - UTC−03</option>
+			<option value="UZT - UTC+05">UZT - UTC+05</option>
+			<option value="VET - UTC−04">VET - UTC−04</option>
+			<option value="VLAT - UTC+10">VLAT - UTC+10</option>
+			<option value="VOLT - UTC+04">VOLT - UTC+04</option>
+			<option value="VOST - UTC+06">VOST - UTC+06</option>
+			<option value="VUT - UTC+11">VUT - UTC+11</option>
+			<option value="WAKT - UTC+12">WAKT - UTC+12</option>
+			<option value="WAST - UTC+02">WAST - UTC+02</option>
+			<option value="WAT - UTC+01">WAT - UTC+01</option>
+			<option value="WEST - UTC+01">WEST - UTC+01</option>
+			<option value="WET - UTC±00">WET - UTC±00</option>
+			<option value="WIT - UTC+07">WIT - UTC+07</option>
+			<option value="WST - UTC+08">WST - UTC+08</option>
+			<option value="YAKT - UTC+09">YAKT - UTC+09</option>
+			<option value="YEKT - UTC+05">YEKT - UTC+05</option>
+		</select></label>
+		<label class="message">Message:<textarea name="message"></textarea></label>
+		<label>Number:<input type="number" name="number"></label>
+		<label>Email:<input type="email" name="email"></label>
+		<input type="submit" title="Submit">
+	</form>
+</body>
+<script src="/utilities/validator.js"></script>
+<script>
+
+// GATHER AND DEFINE ALL HTML ELEMENTS
+
+var form = document.querySelector("form");
+var formDate = document.querySelector("input[type=date]");
+var formTime = document.querySelector("input[type=time]");
+var formTimezone = document.querySelector("select");
+var formMessage = document.querySelector("textarea");
+var formNumber = document.querySelector("input[type=number]");
+var formEmail = document.querySelector("input[type=email]");
+
+// ACTION TO VALIDATE ON SUBMIT BUTTON CLICK
+
+form.addEventListener("submit", function(e){
+	
+	checkEmptyAndDate(formDate, e);
+	checkEmptyAndDate(formTime, e);
+	checkNotEmpty(formTimezone, e);
+	checkNotEmpty(formTime, e);
+	checkEmptyAndLengthGreater(formMessage, 5, e);
+	checkEmptyAndLengthIs(formNumber, 10, e);
+	checkEmptyAndEmail(formEmail, e);
+
+}, false);
+
+</script>
+</html>

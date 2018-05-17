@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+  	margin: 0px;
+  	padding: 0px;
+  	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  	padding: 0px;
+}
+
+.schedule {
+	padding: 20px;
+	width: 400px;
+	border: 1px solid #555;
+	border-radius: 3px;
+	margin: 20px;
+	overflow: auto;
+	color: #555;
+	box-shadow: 0 5px 13px rgba(25,25,25,.12), 0 4px 8px rgba(25,25,25,.24);
+}
+
+.schedule label {
+	font-size: 20px;
+	display: block;
+	padding: 15px;
+	font-weight: 600;
+	margin: auto;
+}
+
+.schedule select {
+	width: 350px;
+	overflow: hidden;
+}
+
+.schedule input[type="date"],
+.schedule input[type="time"],
+.schedule select,
+.schedule input[type="number"],
+.schedule input[type="email"],
+.scehdule textarea {
+	margin-left: 20px;
+	height: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	border: 0;
+	border-bottom: 2px solid #ccc;
+}
+
+.schedule select {
+	vertical-align: middle;
+	margin-bottom: 5px;
+	font-size: 12px;
+	width: 200px;
+}
+
+.schedule .message {
+	padding-top: 0px;
+}
+
+.schedule textarea {
+	display: block;
+	margin-top: 15px;
+	font-size: 14px;
+	width: 100%;
+	height: 75px;
+	padding: 4px;
+}
+.schedule textarea:focus {
+	outline: none;
+}
+
+.schedule input[type="time"] {
+	display: inline-block;
+}
+
+.schedule input:focus {
+	outline: none;
+}
+
+.schedule input[type=date]::-webkit-inner-spin-button {
+	display: none; 
+}
+
+.schedule input[type="submit"] {
+	background: #2196f3;
+	border-bottom: 2px solid #bdbdbd;
+	border-radius: 2px;
+	border: 0px;
+	margin: auto;
+	margin-top: 5px;
+	display: block;
+	color: #F5F5F5;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 2;
+	padding: 5px 105px;
+	vertical-align: middle;
+	box-shadow: 0 5px 13px rgba(25,25,25,.12), 0 4px 8px rgba(25,25,25,.24);
+}
+
+.schedule input[type="submit"]:hover {
+	color: #F9F9F9;
+	background: #38a1f4;
+	box-shadow: 0 5px 13px rgba(25,25,25,.4), 0 4px 8px rgba(25,25,25,.12);
+}
+
+.schedule input[type="submit"]:focus {
+	outline: 0;
+	box-shadow: 0 5px 13px rgba(25,25,25,.2), 0 4px 8px rgba(25,25,25,.2);
+}
+
+.schedule input[type="submit"]:active {
+	background: #1e87da;
+}
+
+/*Testing for validation scripts*/
+
+/*.schedule input.invalid,
+.schedule textarea.invalid {
+	border-bottom: 2px red solid;
+}
+
+.schedule select.invalid {
+	background-color: red;
+}
+
+.schedule input.valid,
+.schedule textarea.valid {
+	border-bottom: 2px green solid;
+}
+
+.schedule select.valid {
+	background-color: green;
+}*/

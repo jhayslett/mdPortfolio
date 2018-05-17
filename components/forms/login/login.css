@@ -1,0 +1,127 @@
+html, body {
+	background: #fdfdfd;
+	margin: 0px;
+}
+
+.login {
+	margin: 10px;
+	width: 220px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	border: 2px solid #555;
+	overflow: auto;
+}
+
+.login header {
+	box-sizing: border-box;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 12px 20px 15px 15px;
+	background-color: #9E9E9E;
+	width: 100%;
+	overflow: auto;
+	color: #EDEDED;
+}
+
+.login footer {
+	background: #9E9E9E;
+	color: #F5F5F5;
+}
+
+.login a {
+	color: #F5F5F5;
+	text-decoration: none;
+}
+
+.login a:hover {
+	color: #212121;
+}
+
+.login main,
+.login footer {
+	padding: 12px 20px 10px 15px;
+}
+
+.login main {
+	padding-bottom: 0px;
+}
+
+.login input {
+	background: #fdfdfd;
+	border: 0px;
+	border-bottom: 2px solid #bdbdbd;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 14px;
+	letter-spacing: .6px;
+	line-height: 2;
+	padding: 5px;
+	margin: 10px 15px 10px 0px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+.login label {
+	letter-spacing: 1.2px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	transition: border 400ms ease;
+	height: 25px;
+	width: 100%;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+	border-bottom: 2px solid #2196f3;
+	outline: 0px;
+}
+
+.login input[type="submit"] {
+	background: #2196f3;
+	border-bottom: 0px;
+	border-radius: 2px;
+	color: #F5F5F5;
+	letter-spacing: 1px;
+	font-weight: 600;
+	height: 30px;
+	height: auto;
+	margin-top: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.login input[type="submit"]:hover {
+	background: #38a1f4;
+}
+
+.login input[type="submit"]:focus {
+	outline: 0;
+}
+
+.login input[type="submit"]:active {
+	background: #1e87da;
+}
+
+.remember,
+.forgot {
+	font-size: 14px;
+	margin: 10px 0px;
+	display: block;
+}
+
+.login input[type="checkbox"] {
+	margin-right: 6px;
+}
+
+.login input[type="text"].invalid,
+.login input[type="password"].invalid {
+	border-bottom: 2px solid red;
+}
+
+.login input[type="text"].valid,
+.login input[type="password"].valid  {
+	border-bottom: 2px solid green;
+}

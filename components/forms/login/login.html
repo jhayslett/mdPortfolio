@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<form class="login" name="login">
+		<header>Login Form</header>
+		<main>
+		<label>Username<input type="text" name="username"></label>
+		<label>Password<input type="password" name="password"></label>
+		<input type="submit" name="submit" value="Sign In">
+		</main>
+		<footer>
+		<label class="remember">
+		<input type="checkbox" name="remember">Remember Username</label>
+		<a href="#"><label class="forgot">Forgot Password</label></a>
+		</footer>
+	</form>
+</body>
+<script src="/utilities/validator.js"></script>
+<script>
+	var login = document.querySelector("form[name=login]");
+	var user = document.querySelector("input[name=username]");
+	var pass = document.querySelector("input[name=password]");
+
+	login.addEventListener("submit",function(e){
+
+	function toggleClass(what, tf) {
+		if(tf) {
+			what.classList.add("valid");
+			what.classList.remove("invalid")
+		} else { 
+			what.classList.add("invalid");
+			what.classList.remove("valid");
+			e.preventDefault();
+		}
+	};		
+
+	validator.isOfLength(user.value, 2) ?  toggleClass(user,true) : toggleClass(user,false);
+	validator.isOfLength(pass.value, 6) ? toggleClass(pass,true) : toggleClass(pass,false);
+
+	})
+</script>
+</html>

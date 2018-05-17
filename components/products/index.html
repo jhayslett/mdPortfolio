@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=.8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Products</title>
+	<link rel="stylesheet" type="text/css" href="products.css">
+</head>
+<body>
+<header class="top-header">
+	<h1 class="top-header__title">Company Name</h1>
+	<ul class="top-header__menu">
+		<li class="top-header__link"><a href="#">Home</a></li>
+		<li class="top-header__link"><a href="#">Products</a></li>
+		<li class="top-header__link"><a href="#">Contact Us</a></li>
+		<li class="top-header__link top-header__link--cart js-cart"><a href="#">Shopping Cart<span class="top-header__cart-amount-square js-cart-amount">0</span></a></li>
+	</ul>
+	<!-- <span id="test"></span> -->
+	<button class="top-header__cart-button">
+		<span class="top-header__cart-amount js-cart-amount">0</span>
+		<i class="material-icons md-32">shopping_basket</i>
+	</button>
+	<button class="top-header__menu-button"><i class="material-icons md-32">list</i></button>
+	<div class="top-header__mobile-menu is-hidden">
+		<ul class="top-header__mobile-links">
+			<button class="top-header__mobile-menu-close"><i class="material-icons">close</i></button>
+			<li class="top-header__mobile-link"><a href="#">LeftHome</a></li>
+			<li class="top-header__mobile-link"><a href="#">Products</a></li>
+			<li class="top-header__mobile-link"><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+</header>
+
+<main class="products">
+	<!-- <p class="products__category">Home > Products</p> -->
+</main>
+<div>
+	<table class="shopping-cart shopping-cart-hidden is-hidden">
+		<thead class="shopping-cart__header">
+			<tr>
+				<th colspan="4" class="shopping-cart__header-main-title">Shopping Cart</th>
+				<th class="shopping-cart__header-close js-cart-close">close</th>
+			</tr>
+			<tr class="shopping-cart__table-header">
+				<th class="shopping-cart__header-title">Name</th>
+				<th class="shopping-cart__header-title">Price</th>
+				<th class="shopping-cart__header-title">Qty</th>
+				<th class="shopping-cart__header-title">Total</th>
+				<th class="shopping-cart__header-title"></th>
+			</tr>
+		</thead>
+		<tbody class="shopping-cart__body">
+			<!-- <tr class="shopping-cart__item">
+				<td class="shopping-cart__item-title">Electronics Item 1</td>
+				<td class="shopping-cart__item-price">47.22</td>
+				<td class="shopping-cart__item-quantity">2<input type="text" name="" class="shopping-cart__item-quantity-edit is-hidden"><i class="material-icons shopping-cart__edit-button">mode_edit</i></td>
+				<td class="shopping-cart__item-total">94.44</td>
+				<td class="shopping-cart__delete-button"><i class="material-icons">close</i></td>
+			</tr>
+			<tr class="shopping-cart__item">
+				<td class="shopping-cart__item-title">Electronics Item 1</td>
+				<td class="shopping-cart__item-price">47.22</td>
+				<td class="shopping-cart__item-quantity">2<i class="material-icons shopping-cart__edit-button">mode_edit</i></td>
+				<td class="shopping-cart__item-total">94.44</td>
+				<td class="shopping-cart__delete-button"><i class="material-icons">close</i></td>
+			</tr>
+			<tr class="shopping-cart__item">
+				<td class="shopping-cart__item-title">Electronics Item 1</td>
+				<td class="shopping-cart__item-price">47.22</td>
+				<td class="shopping-cart__item-quantity">2<i class="material-icons shopping-cart__edit-button">mode_edit</i></td>
+				<td class="shopping-cart__item-total">94.44</td>
+				<td class="shopping-cart__delete-button"><i class="material-icons">close</i></td>
+			</tr>
+			<tr class="shopping-cart__item">
+				<td class="shopping-cart__item-title">Electronics Item 1</td>
+				<td class="shopping-cart__item-price">47.22</td>
+				<td class="shopping-cart__item-quantity">2<i class="material-icons shopping-cart__edit-button">mode_edit</i></td>
+				<td class="shopping-cart__item-total">94.44</td>
+				<td class="shopping-cart__delete-button"><i class="material-icons">close</i></td>
+			</tr> -->
+		</tbody>
+		<tfoot class="shopping-cart__footer">
+			<tr>
+				<td class="shopping-cart__footer-coupon">coupon code<input type="text" name="coupon" class="js-coupon-input"><input type="submit" name="" class="js-coupon-submit"></td>
+				<td class="shopping-cart__footer-coupon-outcome js-coupon-outcome is-not-visible">Coupon applied:<span class="js-coupon-applied"></span></td>
+				<td class="shopping-cart__footer-subtotal-title">subtotal</td>
+				<td class="shopping-cart__footer-subtotal-amount js-discount-total">00.00</td>
+				<td class="shopping-cart__footer-subtotal-amount js-total">00.00</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="shopping-cart__checkout js-checkout">
+					<button>CHECKOUT</button>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	<div class="checkout is-hidden">
+		<table class="checkout__table">
+				<thead class="checkout__header">
+					<tr>
+						<th colspan="2">CART TOTALS</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Subtotal</td>
+						<td>542.12</td>
+					</tr>
+					<tr>
+						<td>Shipping</td>
+						<td>One Day: $43</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Two Day: $43</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Pickup</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>TOTAL:</td>
+						<td>952.43</td>
+					</tr>
+					<tr>
+						<td class="checkout__checkout-button"><button>PROCESS TO PAYMENT</button></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+</div>
+
+
+ <!-- 
+
+ Emmet code to produce the following
+
+ article.products>((section.item>header>img[src="http://placehold.it/180x100"]+h1{Item$}^p{This is  some information about this product. The title of this product is Product $}+div.footer>i.material-icons.green{add}+input:number[value="1"]+i.material-icons.red{remove})*5) 
+
+ -->
+</body>
+<script type="text/javascript" src="../../utilities/utilities.js"></script>
+<script type="text/javascript" src="inventory.js"></script>
+<script type="text/javascript" src="products.js"></script>
+
+</html>

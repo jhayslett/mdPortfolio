@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+html, body {
+  	margin: 0px;
+  	padding: 0px;
+  	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  	padding: 0px;
+}
+
+.payment {
+	width: 350px;
+	border: 1px solid #1B5E20;
+	border-radius: 3px;
+	margin: 20px;
+	box-shadow: 0 5px 13px rgba(25,25,25,.12), 0 4px 8px rgba(25,25,25,.24);
+}
+
+.payment label {
+	display: block;
+	padding: 15px;
+}
+
+.payment input.number {
+	width: 190px;
+}
+
+.payment input,
+.payment select {
+	margin-left: 20px;
+	height: 25px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	border: 0;
+	border-bottom: 2px solid #ccc;
+	transition: all 250ms ease;
+}
+
+.payment label.month {
+	display: inline-block;
+}
+
+.payment input.ss {
+	width: 50px;
+}
+
+.payment input[type="submit"] {
+	background: #4CAF50;
+	border-bottom: 2px solid #bdbdbd;
+	border-radius: 2px;
+	border: 0px;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	color: #F5F5F5;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 2;
+	padding: 10px 35px;
+	box-shadow: 0 5px 13px rgba(25,25,25,.12), 0 4px 8px rgba(25,25,25,.24);
+	height: initial;
+}
+
+.payment input[type="submit"]:hover {
+	color: #F9F9F9;
+	background: #66BB6A;
+	box-shadow: 0 5px 13px rgba(25,25,25,.4), 0 4px 8px rgba(25,25,25,.12);
+}
+
+.payment input[type="submit"]:focus {
+	outline: 0;
+	box-shadow: 0 5px 13px rgba(25,25,25,.2), 0 4px 8px rgba(25,25,25,.2);
+}
+
+.payment input[type="submit"]:active {
+	background: #388E3C;
+}
+
+.payment input[type="text"].invalid,
+.payment input[type="number"].invalid {
+	border-bottom: 2px solid red;
+}
+
+.payment input[type="text"].valid,
+.payment input[type="number"].valid {
+	border-bottom: 2px solid green;
+}
+
+.payment select.valid {
+	background-color: rgba(162, 222, 208, .2);
+}
+
+.payment select.invalid {
+	background-color: rgba(192, 57, 43, .2);
+}

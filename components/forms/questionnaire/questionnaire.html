@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Questionnaire</title>
+	<link rel="stylesheet" type="text/css" href="questionnaire.css">
+</head>
+<body>
+	<form class="questionnaire">
+	<fieldset id="color">
+		<header>What is your favorite color?</header>
+			<label><input type="radio" name="color" value="blue">Blue</label><br>
+			<label><input type="radio" name="color" value="green">Green</label><br>
+			<label><input type="radio" name="color" value="orange">Orange</label><br>
+			<label><input type="radio" name="color" value="red">Red</label><br>
+			<label><input type="radio" name="color" value="tangerine">Tangerine</label><br>
+			<label><input type="radio" name="color" value="yellow">Yellow</label><br>
+			<label><input type="radio" name="color" value="other">Other</label>
+			<input type="text" name="color">
+			<input type="submit" name="submit">
+		</fieldset>
+	</form>
+</body>
+<script src="/utilities/validator.js"></script>
+<script>
+
+// GATHER AND DEFINE ALL HTML ELEMENTS
+
+var form = document.querySelector("form");
+var allElements = document.querySelectorAll("input[type=radio]");
+var other = document.querySelector("input[value=other]");
+var otherText = document.querySelector("input[type=text]");
+var questionOne = document.querySelector("fieldset");
+
+// ACTION TO VALIDATE ON SUBMIT BUTTON CLICK
+
+form.addEventListener("submit", function(e){
+	var checked = false;
+	var count = allElements.length;
+	for(var i = 0; i < count; i++) {
+		if(allElements[i].checked) {
+			checked = true;
+		}
+	}
+
+	if(other.checked && (validator.isEmpty(otherText.value))) {
+		checked = false;
+	}
+	console.log(checked);
+	toggleClass(questionOne, checked, e);
+}, false);
+
+</script>
+</html>

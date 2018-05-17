@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	}
+html, body {
+    height:100%;
+}
+body {
+	background-color: #F5F5F5;
+}
+.profileCard {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background-color: #F1F1F1;
+	width: 40%;
+	min-width: 300px;
+	max-width: 500px;
+	border: 1px solid #333;
+	padding: 0px;
+}
+
+header {
+	background-color: #5D4037;
+	padding: 30px 25px 27px 45px;
+}
+
+.cardTitle {
+	color: #FFFFFF;
+	font-weight: 600;
+	line-height: 1.3;
+	letter-spacing: 1.5px;
+	margin: 0px;
+}
+
+.cardMainImage {
+	width: 100%;
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+    border-bottom: 1px solid #BDBDBD;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 0px 40px -15px black;
+}
+
+.subtitle {
+	color: #D7CCC8;
+	font-size: 16px;
+}
+
+.cardContent {
+	padding: 10px 25px 27px 45px;
+}
+
+.contentHeader {
+	color: #212121;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+.contentParagraph {
+	font-size: 16px;
+	margin-top: 5px;
+	line-height: 1.8;
+	color: #757575;
+}
+
+.backButton {
+	padding: 10px 25px 27px 45px;
+	float: right;
+	text-align: right;
+	color: #212121;
+	text-decoration: none;
+}
+
+.backButton:hover {
+	color: #795548;
+}
+
+.cf:before,
+.cf:after {
+	content: '';
+	display: table; 
+}
+
+.cf:after { clear: both; }
+}

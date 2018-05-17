@@ -1,0 +1,56 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+	width: 100%;
+	background-color: #4183D7;
+	overflow: hidden;
+}
+
+.mainList {
+	color: white;
+}
+
+.mainNav {
+	background-color: #4183D7;
+	float: left;
+	height: 25px;
+	padding: 15px 15px 5px 15px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.mainList a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mainList a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mainNav:hover {
+	background-color: #446CB3;
+}
+
+.mainNav:active {
+	background-color: #6C7A89;
+}
+
+.formList a {
+	padding: 20px;
+	
+}
+
+.formList a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.formList a:visited {
+	text-decoration: none;
+	color: inherit;
+}

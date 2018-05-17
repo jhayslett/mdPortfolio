@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding: 0px;
+}
+
+form {
+  width: 400px;
+  border: 1px solid black;
+  padding: 35px;
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translateX(-50%) translateY(-50%);
+  margin: auto;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+form:hover {
+  background: #fff;
+}
+
+.colorPicker h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+.colorPicker label {
+  display: block;
+  letter-spacing: 1.2px;
+  padding-top: 15px;
+}
+
+label.number {
+  display: inline;
+  padding-left: 20px;
+  text-align: middle;
+  padding-top: 0px;
+  ;
+}
+
+/* Webkit Style Set */
+
+.colorPicker input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+  border: none;
+  
+  /*required for proper track sizing in FF*/
+  width: 260px;
+}
+
+.colorPicker input[type=range]::-webkit-slider-runnable-track {
+  width: 260px;
+  height: 15px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+.colorPicker input#red[type=range]::-webkit-slider-runnable-track {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ff0000+100 */
+  background: rgb(0,0,0); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(255,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(255,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(255,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ff0000',GradientType=1 ); /* IE6-9 */
+  }
+
+.colorPicker input#green[type=range]::-webkit-slider-runnable-track {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,00ff00+100 */
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,255,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,255,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,255,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ff00',GradientType=1 ); /* IE6-9 */
+}
+
+.colorPicker input#blue[type=range]::-webkit-slider-runnable-track {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,0000ff+100 */
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0000ff',GradientType=1 ); /* IE6-9 */
+}
+
+
+.colorPicker input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  background: #fdfdfd;
+  margin-top: -4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.colorPicker input[type=range]:focus {
+  outline: none;
+}
+.colorPicker input[type=range]:focus::-webkit-slider-runnable-track {
+ 
+}
+
+/* Firefox Style Set */
+
+.colorPicker input[type=range]::-moz-range-track {
+  width: 260px;
+  height: 5px;
+  border: none;
+  border-radius: 3px;
+}
+.colorPicker input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 20px;
+  width: 20px;
+  background: #fdfdfd;
+  margin-top: -4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/*hide the outline behind the border*/
+.colorPicker input[type=range]:-moz-focusring{
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+/* Internet Explorer Style Sets */
+
+.colorPicker input[type=range]::-ms-track {
+  width: 260px;
+  height: 5px;
+  
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+.colorPicker input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+
+.colorPicker input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.colorPicker input[type=range]::-ms-thumb {
+  border: none;
+  height: 20px;
+  width: 20px;
+  background: #fdfdfd;
+  margin-top: -4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.colorPicker input[type=range]:focus::-ms-fill-lower {
+  background: #fdfdfd;
+}
+
+.colorPicker input[type=range]:focus::-ms-fill-upper {
+  background: #fdfdfd;
+}
