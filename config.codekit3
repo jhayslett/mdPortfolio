@@ -7,8 +7,533 @@
 		"uuidString": "19E6942A-2B85-4486-B46C-480F8DD4E707"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/components.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components.html",
+		"oF": 0
+		},
+	"\/components\/buttons\/button.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/buttons\/button-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/buttons\/buttons.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/buttons\/buttons.html",
+		"oF": 0
+		},
+	"\/components\/buttons\/readme.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/components\/buttons\/readme.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/components\/calculator\/calculator-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/calculator\/calculator-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/calculator\/calculator-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/components\/calculator\/calculator-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/components\/calculator\/calculator.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/calculator\/calculator-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/calculator\/calculator.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/calculator\/calculator.html",
+		"oF": 0
+		},
+	"\/components\/calculator\/calculator.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/components\/calculator\/calculator-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/components\/forms\/color_picker\/color_picker.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/color_picker\/color_picker-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/color_picker\/color_picker.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/color_picker\/color_picker.html",
+		"oF": 0
+		},
+	"\/components\/forms\/index.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/index-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/index.html",
+		"oF": 0
+		},
+	"\/components\/forms\/login\/login-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/login\/login-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/login\/login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/login\/login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/login\/login.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/login\/login.html",
+		"oF": 0
+		},
+	"\/components\/forms\/payment_form\/payment-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/payment_form\/payment-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/payment_form\/payment.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/payment_form\/payment-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/payment_form\/payment.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/payment_form\/payment.html",
+		"oF": 0
+		},
+	"\/components\/forms\/questionnaire\/questionnaire.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/questionnaire\/questionnaire-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/questionnaire\/questionnaire.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/questionnaire\/questionnaire.html",
+		"oF": 0
+		},
+	"\/components\/forms\/scheduling\/schedule-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/scheduling\/schedule-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/scheduling\/schedule.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/scheduling\/schedule-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/scheduling\/schedule.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/scheduling\/schedule.html",
+		"oF": 0
+		},
+	"\/components\/forms\/search_form\/search_form.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/search_form\/search_form-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/search_form\/search_form.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/search_form\/search_form.html",
+		"oF": 0
+		},
+	"\/components\/forms\/shipping_and_billing\/shipping_and_billing-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/shipping_and_billing\/shipping_and_billing-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/shipping_and_billing\/shipping_and_billing.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/shipping_and_billing\/shipping_and_billing-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/shipping_and_billing\/shipping_and_billing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/shipping_and_billing\/shipping_and_billing.html",
+		"oF": 0
+		},
+	"\/components\/forms\/signup_form\/signup_form-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/signup_form\/signup_form-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/signup_form\/signup_form.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/forms\/signup_form\/signup_form-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/forms\/signup_form\/signup_form.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/forms\/signup_form\/signup_form.html",
+		"oF": 0
+		},
+	"\/components\/products\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/products\/index.html",
+		"oF": 0
+		},
+	"\/components\/products\/inventory-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/components\/products\/inventory-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/components\/products\/inventory.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/components\/products\/inventory-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/components\/products\/products-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/components\/products\/products-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/components\/products\/products.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/products-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/products\/products.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/components\/products\/products-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/components\/products\/products.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/products.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/components\/products\/screenshots\/1-products--desktop__no-header.jpg": {
+		"ft": 16384,
+		"iS": 2183726,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/1-products--desktop__no-header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/2-products--mobile__single-column.jpg": {
+		"ft": 16384,
+		"iS": 479744,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/2-products--mobile__single-column.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/2-products--tablet__two-column.jpg": {
+		"ft": 16384,
+		"iS": 783811,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/2-products--tablet__two-column.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/2-side-menu--all__open.jpg": {
+		"ft": 16384,
+		"iS": 680984,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/2-side-menu--all__open.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/add-to-cart-confirmation--all.jpg": {
+		"ft": 16384,
+		"iS": 174013,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/add-to-cart-confirmation--all.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/Left-Menu--Desktop.jpg": {
+		"ft": 16384,
+		"iS": 152488,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/Left-Menu--Desktop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/Mobile-Menu.jpg": {
+		"ft": 16384,
+		"iS": 241370,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/Mobile-Menu.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/productsGraphics.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/productsGraphics.psd",
+		"oF": 0
+		},
+	"\/components\/products\/screenshots\/Screen Shot 2018-03-26 at 10.16.22 PM.png": {
+		"ft": 32768,
+		"iS": 136857,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/Screen Shot 2018-03-26 at 10.16.22 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/Shopping-Cart--Desktop.jpg": {
+		"ft": 16384,
+		"iS": 908591,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/Shopping-Cart--Desktop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/Shopping-Cart--Mobile.png": {
+		"ft": 32768,
+		"iS": 824662,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/Shopping-Cart--Mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/components\/products\/screenshots\/Shopping-Cart--Mobile__Inline.jpg": {
+		"ft": 16384,
+		"iS": 385671,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/products\/screenshots\/Shopping-Cart--Mobile__Inline.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/profile_card\/assets\/mainProfilePicture.jpg": {
+		"ft": 16384,
+		"iS": 26390,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/components\/profile_card\/assets\/mainProfilePicture.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/components\/profile_card\/profile_card.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/components\/profile_card\/profile_card-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/components\/profile_card\/profile_card.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/components\/profile_card\/profile_card.html",
+		"oF": 0
+		},
 	"\/css\/portfolio.css": {
 		"aP": 1,
 		"bl": 0,
@@ -58,6 +583,246 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/screenshots\/About Me Background.JPG": {
+		"ft": 16384,
+		"iS": 1079112,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/screenshots\/About Me Background.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/screenshots\/Mobile 320 - Full.png": {
+		"ft": 32768,
+		"iS": 203951,
+		"oA": 0,
+		"oAP": "\/screenshots\/Mobile 320 - Full.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/Mobile 320 - Menu Selected.png": {
+		"ft": 32768,
+		"iS": 38495,
+		"oA": 0,
+		"oAP": "\/screenshots\/Mobile 320 - Menu Selected.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/Mobile 320 - Projects Picture Layout.png": {
+		"ft": 32768,
+		"iS": 25559,
+		"oA": 0,
+		"oAP": "\/screenshots\/Mobile 320 - Projects Picture Layout.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/Mobile 320 - Projects Secondary Layout.png": {
+		"ft": 32768,
+		"iS": 37856,
+		"oA": 0,
+		"oAP": "\/screenshots\/Mobile 320 - Projects Secondary Layout.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/Mobile 320 - Search Bar.png": {
+		"ft": 32768,
+		"iS": 19234,
+		"oA": 0,
+		"oAP": "\/screenshots\/Mobile 320 - Search Bar.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo.zip",
+		"oF": 0
+		},
+	"\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo\/component-demo-final-optimized.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo\/component-demo-final-optimized.mp4",
+		"oF": 0
+		},
+	"\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo\/component-demo-final.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo\/component-demo-final.mp4",
+		"oF": 0
+		},
+	"\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo\/timeSpy.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/Time-Spy-Component-Demo\/timeSpy.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/Time Spy Component - JS CSS\/time_spy-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/time_spy-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Time Spy Component - JS CSS\/time_spy.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/time_spy-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/Time Spy Component - JS CSS\/time_spy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/time_spy.html",
+		"oF": 0
+		},
+	"\/Time Spy Component - JS CSS\/time_spy.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/time_spy-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Time Spy Component - JS CSS\/time_spy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/time_spy.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/Time Spy Component - JS CSS\/time_spy_modified-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/time_spy_modified-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Time Spy Component - JS CSS\/time_spy_modified.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Time Spy Component - JS CSS\/time_spy_modified-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/utilities\/utilities-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/utilities\/utilities-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/utilities\/utilities.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/utilities\/utilities-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/utilities\/validator-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/utilities\/validator-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/utilities\/validator.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/utilities\/validator-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Web Site Mockup.xd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/Web Site Mockup.xd",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -66,9 +831,10 @@
 	},
 "projectAttributes": {
 	"creationDate": 533582640,
-	"displayValue": "source",
+	"displayValue": "mdPortfolio",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-confusedBaby"
+	"iconImageName": "meme-confusedBaby",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -76,6 +842,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -639,6 +1406,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -1866,6 +2637,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

@@ -8,58 +8,68 @@
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script type="text/javascript" src="utilities/utilities.js"></script>
+      <script type="text/javascript" src="utilities/validator.js"></script>
+      <script type="text/javascript">
+      	document.addEventListener("DOMContentLoaded",function(){
+      		var element = document.querySelector("header.mainHeader h1").innerHTML;
+      		console.log(validator.isCreditCard("1233123112311231"));
+      	});
+      </script>
 </head>
 <body>
-	<nav class="mainNav">
-		<section class="navItem">about me</section>
-		<section class="navItem">projects</section>
-		<section class="navItem">skills</section>
-		<section class="navItem">contact</section>
-	</nav>
-	<header>
-		<i class="material-icons md-48">menu</i>
-		<h1>jhayslett</h1>
-		<i class="material-icons md-48">search</i>
+	<header class="row mainHeader">
+		<i class="col-1 offsetBy-1 material-icons md-24 cTxt">menu</i>
+		<h1 class="col-8">jhayslett</h1>
+		<i class="col-1 material-icons md-24 cTxt">search</i>
 	</header>
+	<nav class="row mainNav">
+		<section class="col-3 navItem aboutMe"><h1>about me</h1></section>
+		<section class="col-3 navItem projects"><h1>projects</h1></section>
+		<section class="col-3 navItem skills"><h1>skills</h1></section>
+		<section class="col-3 navItem contact"><h1>contact</h1></section>
+	</nav>
 
-	<section class="pageSection aboutMe">
-		<header>
-			<h2>about me</h2>
+	<section class="row pageSection aboutMe">
+		<header class="row">
+			<h1 class="col-12">about me</h1>
 		</header>
-		<main>
-			<header>Bacon</header>
-			<main>
+		<main class="row">
+			<header class="col-12">
+				<h2>Bacon</h2>
+			</header>
+			<main class="offsetBy-1 col-10">
 				<p>Spicy jalapeno bacon ipsum dolor amet dolore qui laborum occaecat hamburger. Alcatra sint filet mignon officia dolore ut voluptate. Aliquip ribeye tail irure quis dolore labore pork loin sed. Cow pork loin occaecat, ut bresaola fugiat consequat short ribs short loin pastrami deserunt turducken velit dolore.</p>
 				<p>Ut frankfurter porchetta tempor, turkey ex minim. Ground round tri-tip dolore sunt laboris. Ham minim dolore sint ham hock, chicken duis turducken nulla dolor t-bone eu shank beef capicola. Alcatra pork chuck, aute ground round lorem in minim mollit pancetta voluptate.</p>
+				<footer>
+					<p>"Cow pork loin occaecat, ut bresaola fugiat consequat short ribs short loin pastrami deserunt.”</p>
+					<p>- Shanky McGregor</p>
+				</footer>
 			</main>	
-			<footer>
-				<p>"Cow pork loin occaecat, ut bresaola fugiat consequat short ribs short loin pastrami deserunt.”</p>
-				<p>- Shanky McGregor</p>
-			</footer>
 		</main>
 	</section>
-	<section class="pageSection projects">
-		<header>
-			<h2>projects</h2>
+	<section class="row pageSection projects">
+		<header class="col-12">
+			<h1>projects</h1>
 		</header>
-		<main class="allProjects">
-			<section class="project active">
+		<main class="offsetBy-1 col-10 row allProjects">
+			<section class="project active col-12">
 				<header>
 					<h3>Calculator</h3>
 				</header>
-				<main>
-					<div class="projectGallery">
+				<main class="row">
+					<div class="projectGallery col-10 offsetBy-1">
 						<img class="projectThumbnail" src="http://via.placeholder.com/350x150">
-						<button class="galleryButton first">1</button>
-						<button class="galleryButton second">2</button>
-						<button class="galleryButton third">3</button>
-						<button class="galleryButton fourth">4</button>
+						<button class="galleryButton first col-3">1</button>
+						<button class="galleryButton second col-3">2</button>
+						<button class="galleryButton third col-3">3</button>
+						<button class="galleryButton fourth col-3">4</button>
 						<div class="description">Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</div>
-					</div>
-					<footer>
-						<button>Demo</button>
-						<button>SOURCE</button>
+						<footer>
+							<button>Demo</button>
+							<button>SOURCE</button>
 					</footer>
+					</div>
 				</main>
 			</section>
 			<section class="project inactive">
@@ -121,17 +131,17 @@
 			</section>
 		</main>
 	</section>
-	<section class="pageSection skills">
+	<section class="row pageSection skills">
 		<header>
-			<h2>skills</h2>
+			<h1>skills</h1>
 		</header>
 		<main>
 			
 		</main>
 	</section>
-	<section class="pageSection contact">
+	<section class="row pageSection contact">
 		<header>
-			<h2>contact</h2>
+			<h1>contact</h1>
 		</header>
 		<main>
 			

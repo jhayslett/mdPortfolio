@@ -1,5 +1,5 @@
 function galleryHeaders(){
-	var allProjects = document.querySelector(".projects");
+	var allProjects = document.querySelector(".allProjects");
 	var eachProject = allProjects.querySelectorAll(".project");
 	for(var a = 0; a < eachProject.length; a++) {
 		addGalleryHeaderLinks(eachProject[a]);
