@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 	<script type="text/javascript" src="js/portfolio.js"></script>
 	<link rel="shortcut icon" href="">
@@ -10,145 +11,273 @@
       rel="stylesheet">
       <script type="text/javascript" src="utilities/utilities.js"></script>
       <script type="text/javascript" src="utilities/validator.js"></script>
-      <script type="text/javascript">
-      	document.addEventListener("DOMContentLoaded",function(){
-      		var element = document.querySelector("header.mainHeader h1").innerHTML;
-      		console.log(validator.isCreditCard("1233123112311231"));
-      	});
-      </script>
 </head>
-<body>
-	<header class="row mainHeader">
-		<i class="col-1 offsetBy-1 material-icons md-24 cTxt">menu</i>
-		<h1 class="col-8">jhayslett</h1>
-		<i class="col-1 material-icons md-24 cTxt">search</i>
+<body class="jh row">
+	<header class="row col-12 jh-main-header">
+		<i class="col-1 offsetBy-1 material-icons jh-main-header__icon js-main-menu-button">menu</i>
+		<h1 class="col-8 jh-main-header__title">jhayslett</h1>
+		<i class="col-1 material-icons jh-main-header__icon jh-main-header__icon--search">search</i>
 	</header>
-	<nav class="row mainNav">
-		<section class="col-3 navItem aboutMe"><h1>about me</h1></section>
-		<section class="col-3 navItem projects"><h1>projects</h1></section>
-		<section class="col-3 navItem skills"><h1>skills</h1></section>
-		<section class="col-3 navItem contact"><h1>contact</h1></section>
+	<nav class="row col-12 jh-main-navigation hidden">
+		<section class="col-12 jh-main-navigation__item jh-main-navigation__item--about-me"><h1>about me</h1></section>
+		<section class="col-12 jh-main-navigation__item jh-main-navigation__item--projects"><h1>projects</h1></section>
+		<section class="col-12 jh-main-navigation__item jh-main-navigation__item--skills"><h1>skills</h1></section>
+		<section class="col-12 jh-main-navigation__item jh-main-navigation__item--contact"><h1>contact</h1></section>
 	</nav>
 
-	<section class="row pageSection aboutMe">
-		<header class="row">
-			<h1 class="col-12">about me</h1>
+	<section class="row jh-page-section jh-page-section--about-me">
+		<header class="row col-12 jh-page-section__top-header jh-page-section__top-header--about-me">
+			<h1 class="col-11 jh-page-section__top-title jh-page-section__top-title">about me</h1>
 		</header>
-		<main class="row">
-			<header class="col-12">
-				<h2>Bacon</h2>
+		<div class="row jh-page-section__main-content jh-about-me">
+			<header class="col-12 jh-about-me__header">
+				<h2 class="col-11 jh-about-me__title">Bacon</h2>
 			</header>
-			<main class="offsetBy-1 col-10">
-				<p>Spicy jalapeno bacon ipsum dolor amet dolore qui laborum occaecat hamburger. Alcatra sint filet mignon officia dolore ut voluptate. Aliquip ribeye tail irure quis dolore labore pork loin sed. Cow pork loin occaecat, ut bresaola fugiat consequat short ribs short loin pastrami deserunt turducken velit dolore.</p>
+			<div class="row offsetBy-1 col-10 jh-about-me__description">
+				<p class="jh-about-me__description-paragraph">Spicy jalapeno bacon ipsum dolor amet dolore qui laborum occaecat hamburger. Alcatra sint filet mignon officia dolore ut voluptate. Aliquip ribeye tail irure quis dolore labore pork loin sed. Cow pork loin occaecat, ut bresaola fugiat consequat short ribs short loin pastrami deserunt turducken velit dolore.</p>
 				<p>Ut frankfurter porchetta tempor, turkey ex minim. Ground round tri-tip dolore sunt laboris. Ham minim dolore sint ham hock, chicken duis turducken nulla dolor t-bone eu shank beef capicola. Alcatra pork chuck, aute ground round lorem in minim mollit pancetta voluptate.</p>
-				<footer>
-					<p>"Cow pork loin occaecat, ut bresaola fugiat consequat short ribs short loin pastrami deserunt.”</p>
-					<p>- Shanky McGregor</p>
-				</footer>
-			</main>	
-		</main>
+			</div>	
+			<div class="row offsetBy-1 col-10 jh-about-me__quote">
+				<p class="jh-about-me__quote-saying">"Cow pork loin occaecat, ut bresaola fugiat consequat short ribs short loin pastrami deserunt.”</p>
+				<p class="jh-about-me__quote-person">- Shanky McGregor</p>
+			</div>
+		</div>
 	</section>
-	<section class="row pageSection projects">
-		<header class="col-12">
-			<h1>projects</h1>
+	<section class="row jh-page-section jh-page-section--projects">
+		<header class="row col-12 jh-page-section__top-header jh-page-section__top-header--projects">
+			<h1 class="col-11 jh-page-section__top-title jh-page-section__top-title--projects">projects</h1>
 		</header>
-		<main class="offsetBy-1 col-10 row allProjects">
-			<section class="project active col-12">
-				<header>
-					<h3>Calculator</h3>
-				</header>
-				<main class="row">
-					<div class="projectGallery col-10 offsetBy-1">
-						<img class="projectThumbnail" src="http://via.placeholder.com/350x150">
-						<button class="galleryButton first col-3">1</button>
-						<button class="galleryButton second col-3">2</button>
-						<button class="galleryButton third col-3">3</button>
-						<button class="galleryButton fourth col-3">4</button>
-						<div class="description">Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</div>
-						<footer>
-							<button>Demo</button>
-							<button>SOURCE</button>
-					</footer>
+		<div class="offsetBy-1 col-10 row jh-page-section__main-content jh-projects">
+			<div class="jh-projects__table">
+				<section class="jh-project jh-project--active">
+					<header class="jh-project__header">
+						<h3 class="jh-project__header-title">Calculator</h3>
+					</header>
+					<div class="row jh-project__information">
+						<div class="col-10 offsetBy-1 jh-project__gallery">
+							<img class="jh-project__thumbnail jh-project__thumbnail--active col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+						</div>
+						<div class="col-10 offsetBy-1 jh-project__gallery-buttons">
+							<button class="jh-project__gallery-button jh-project__gallery-button--active col-3">1</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">2</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">3</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">4</button>
+						</div>
+						<div class="jh-project__detail col-10 offsetBy-1">
+							<p class="col-12 jh-project__description jh-project__description--active">1. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">2. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">3. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">4. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<button class="jh-project__details-button col-6">DEMO</button>
+							<button class="jh-project__details-button col-6">SOURCE</button>
+						</div>
 					</div>
-				</main>
-			</section>
-			<section class="project inactive">
-				<header>
-					<h3>Forms</h3>
-				</header>
-				<main>
-					<div class="projectGallery">
-						<img class="projectThumbnail" src="http://via.placeholder.com/350x150">
-						<button class="galleryButton first">1</button>
-						<button class="galleryButton second">2</button>
-						<button class="galleryButton third">3</button>
-						<button class="galleryButton fourth">4</button>
-						<div class="description">Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</div>
+				</section>
+				<section class="jh-project jh-project--inactive">
+					<header class="jh-project__header">
+						<h3 class="jh-project__header-title">Cart</h3>
+					</header>
+					<div class="row jh-project__information">
+						<div class="col-10 offsetBy-1 jh-project__gallery">
+							<img class="jh-project__thumbnail jh-project__thumbnail--active col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+						</div>
+						<div class="col-10 offsetBy-1 jh-project__gallery-buttons">
+							<button class="jh-project__gallery-button jh-project__gallery-button--active col-3">1</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">2</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">3</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">4</button>
+						</div>
+						<div class="jh-project__detail col-10 offsetBy-1">
+							<p class="col-12 jh-project__description jh-project__description--active">1. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">2. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">3. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">4. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<button class="jh-project__details-button col-6">DEMO</button>
+							<button class="jh-project__details-button col-6">SOURCE</button>
+						</div>
 					</div>
-					<footer>
-						<button>Demo</button>
-						<button>SOURCE</button>
-					</footer>
-				</main>
-			</section>
-			<section class="project inactive">
-				<header>
-					<h3>Accounts</h3>
-				</header>
-				<main>
-					<div class="projectGallery">
-						<img class="projectThumbnail" src="http://via.placeholder.com/350x150">
-						<button class="galleryButton first">1</button>
-						<button class="galleryButton second">2</button>
-						<button class="galleryButton third">3</button>
-						<button class="galleryButton fourth">4</button>
-						<div class="description">Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</div>
+				</section>
+				<section class="jh-project jh-project--inactive">
+					<header class="jh-project__header">
+						<h3 class="jh-project__header-title">Forms</h3>
+					</header>
+					<div class="row jh-project__information">
+						<div class="col-10 offsetBy-1 jh-project__gallery">
+							<img class="jh-project__thumbnail jh-project__thumbnail--active col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+						</div>
+						<div class="col-10 offsetBy-1 jh-project__gallery-buttons">
+							<button class="jh-project__gallery-button jh-project__gallery-button--active col-3">1</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">2</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">3</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">4</button>
+						</div>
+						<div class="jh-project__detail col-10 offsetBy-1">
+							<p class="col-12 jh-project__description jh-project__description--active">1. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">2. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">3. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">4. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<button class="jh-project__details-button col-6">DEMO</button>
+							<button class="jh-project__details-button col-6">SOURCE</button>
+						</div>
 					</div>
-					<footer>
-						<button>Demo</button>
-						<button>SOURCE</button>
-					</footer>
-				</main>
-			</section>
-			<section class="project inactive">
-				<header>
-					<h3>Cart</h3>
-				</header>
-				<main>
-					<div class="projectGallery">
-						<img class="projectThumbnail" src="http://via.placeholder.com/350x150">
-						<button class="galleryButton first">1</button>
-						<button class="galleryButton second">2</button>
-						<button class="galleryButton third">3</button>
-						<button class="galleryButton fourth">4</button>
-						<div class="description">Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</div>
+				</section>
+				<section class="jh-project jh-project--inactive">
+					<header class="jh-project__header">
+						<h3 class="jh-project__header-title">Account</h3>
+					</header>
+					<div class="row jh-project__information">
+						<div class="col-10 offsetBy-1 jh-project__gallery">
+							<img class="jh-project__thumbnail jh-project__thumbnail--active col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+							<img class="jh-project__thumbnail jh-project__thumbnail--inactive col-12" src="http://via.placeholder.com/350x250">
+						</div>
+						<div class="col-10 offsetBy-1 jh-project__gallery-buttons">
+							<button class="jh-project__gallery-button jh-project__gallery-button--active col-3">1</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">2</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">3</button>
+							<button class="jh-project__gallery-button jh-project__gallery-button--inactive col-3">4</button>
+						</div>
+						<div class="jh-project__detail col-10 offsetBy-1">
+							<p class="col-12 jh-project__description jh-project__description--active">1. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">2. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">3. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<p class="col-12 jh-project__description jh-project__description--inactive">4. Spicy jalapeno bacon ipsum dolorsaw amet dolore qui laborum occaecat hamburger amet dolore amet dolore.</p>
+							<button class="jh-project__details-button col-6">DEMO</button>
+							<button class="jh-project__details-button col-6">SOURCE</button>
+						</div>
 					</div>
-					<footer>
-						<button>Demo</button>
-						<button>SOURCE</button>
-					</footer>
-				</main>
-			</section>
-		</main>
+				</section>
+			</div>
+		</div>
 	</section>
-	<section class="row pageSection skills">
-		<header>
-			<h1>skills</h1>
+	<section class="row jh-page-section jh-page-section--skills">
+		<header class="row col-12 jh-page-section__top-header jh-page-section__top-header--skills">
+			<h1 class="col-11 jh-page-section__top-title jh-page-section__top-title--skills">skills</h1>
 		</header>
-		<main>
+		<div class="col-12 row jh-page-section__main-content jh-skills">
+			<div class="jh-skills__table">
+				<div class="row col-12 jh-skills__skill jh-skill">
+					<header class="jh-skill__header">
+						<h4 class="jh-skill__title">Font-End Web Development</h4>
+					</header>
+					<div class="row jh-skill__main">
+						<div class="row col-3 jh-skill__rating-labels">
+							<div class="jh-skill__rating-label jh-skill__rating-label--expert">Expert</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--proficient">Proficient</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--competent">Competent</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--learning">Learning</div>
+						</div>
+						<div class="col-9 jh-skill__score-chart jh-skill__score-chart--purple">
+							<div class="col-15 offsetBy-halfColumn jh-skill__chart-level jh-skill__chart-level--levelOne"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelTwo"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelThree"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelFour"></div>
+						</div>
+						<div class="offsetBy-3 col-9 jh-skill__categories">
+							<div class="col-15 offsetBy-halfColumn jh-skill__category-label">
+								<p class="jh-skill__category-title">HTML</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">CSS</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">JavaScript</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">Web Design</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row col-12 jh-skills__skill jh-skill">
+					<header class="jh-skill__header">
+						<h4 class="jh-skill__title">Survey / Reporting Development</h4>
+					</header>
+					<div class="row jh-skill__main">
+						<div class="row col-3 jh-skill__rating-labels jh-skill__rating-labels">
+							<div class="jh-skill__rating-label jh-skill__rating-label--expert">Expert</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--proficient">Proficient</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--competent">Competent</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--learning">Learning</div>
+						</div>
+						<div class="col-9 jh-skill__score-chart jh-skill__score-chart--green">
+							<div class="col-15 offsetBy-halfColumn jh-skill__chart-level jh-skill__chart-level--levelOne"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelTwo"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelThree"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelFour"></div>
+						</div>
+						<div class="offsetBy-3 col-9 jh-skill__categories">
+							<div class="col-15 offsetBy-halfColumn jh-skill__category-label">
+								<p class="jh-skill__category-title">Survey Creation</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">Data Reporting</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">Automation</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">API Integration</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row col-12 jh-skills__skill jh-skill">
+					<header class="jh-skill__header">
+						<h4 class="jh-skill__title">Other Skills</h4>
+					</header>
+					<div class="row jh-skill__main">
+						<div class="row col-3 jh-skill__rating-labels">
+							<div class="jh-skill__rating-label jh-skill__rating-label--expert">Expert</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--proficient">Proficient</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--competent">Competent</div>
+							<div class="jh-skill__rating-label jh-skill__rating-label--learning">Learning</div>
+						</div>
+						<div class="col-9 jh-skill__score-chart jh-skill__score-chart--blue">
+							<div class="col-15 offsetBy-halfColumn jh-skill__chart-level jh-skill__chart-level--levelOne"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelTwo"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelThree"></div>
+							<div class="col-15 offsetBy-15 jh-skill__chart-level jh-skill__chart-level--levelFour"></div>
+						</div>
+						<div class="offsetBy-3 col-9 jh-skill__categories">
+							<div class="col-15 offsetBy-halfColumn jh-skill__category-label">
+								<p class="jh-skill__category-title">PhotographyL</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">Corporate Video</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">eLearning</p>
+							</div>
+							<div class="col-15 offsetBy-15 jh-skill__category-label">
+								<p class="jh-skill__category-title">Voiceover</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="row jh-page-section jh-page-section--contact">
+		<header class="row col-12 jh-page-section__top-header jh-page-section__top-header--contact">
+			<h1 class="col-11 jh-page-section__top-title jh-page-section__top-title--contact">contact</h1>
+		</header>
+		<div class="">
 			
-		</main>
+		</div>
 	</section>
-	<section class="row pageSection contact">
-		<header>
-			<h1>contact</h1>
-		</header>
-		<main>
-			
-		</main>
-	</section>
-	<footer>
-		<p><i class="material-icons md-18">copyright</i>2017 jhayslett</p>
+	<footer class="jh-main-footer row">
+		<p class="jh-main-footer__text col-12"><i class="material-icons jh-main-footer__icon">copyright</i>2017 jhayslett</p>
 	</footer>
 </body>
 </html>

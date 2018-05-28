@@ -1,0 +1,2 @@
+# Time Spy
+Time Spy is a real-time article estimated read time count down. It sits nicely next to a body of content, allows the developer to select the topic complexity while analyzing the word count to provide an accurate time estimation.

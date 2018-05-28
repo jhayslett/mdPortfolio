@@ -31,9 +31,6 @@ section {
   display: block;
 }
 
-
-
-
 /*       COLORS       */
 
 $white: #fff;
@@ -49,31 +46,20 @@ $headerGreenBG: #1E824C;
 $headerPurpleBG: #663399;
 $headerYellowFT: #FDE3A7;
 
-
-
-
-
-
-
 /*        TYPOGRAPHY        */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,800|Oleo+Script:400,700');
-
-
-
-
-
 
 /*       GRID        */
 
 
 .row {
-  border: 1.5px solid green;
+  // border: 1.5px solid green;
 }
 
 [class*="col-"] {
     float: left;
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 100%;
     vertical-align: middle;
 }
@@ -85,11 +71,8 @@ $headerYellowFT: #FDE3A7;
     display: table;
 }
 
-
-
-@media (min-width: 550px) {
-
   .col-1 {width: 8.33%;}
+  .col-15 {width: 12.495%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
   .col-4 {width: 33.33%;}
@@ -103,7 +86,9 @@ $headerYellowFT: #FDE3A7;
   .col-12 {width: 100%;}
   
   .offsetBy-1 {margin-left: 8.33%;}
+  .offsetBy-15 {margin-left: 12.495%;}
   .offsetBy-2 {margin-left: 16.66%;}
+  .offsetBy-25 {margin-left: 20.825%;}
   .offsetBy-3 {margin-left: 25%;}
   .offsetBy-4 {margin-left: 33.33%;}
   .offsetBy-5 {margin-left: 41.66%;}
@@ -116,46 +101,6 @@ $headerYellowFT: #FDE3A7;
   .offsetBy-12 {margin-left: 100%;}
 
   .offsetBy-halfColumn {margin-left: 4.165%;}
-
-}
-
-
-
-
-/*         ICONS          */
-
-/* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
-
-
-
-
-/*        CENTER ELEMENTS AND TEXT        */
-
-.cEl {
-  margin: auto;
-}
-
-.cTxt {
-  text-align: center;
-}
-
-
-
-
-
 
 /*      DEFAULT STATES         */
 
@@ -175,6 +120,20 @@ $headerYellowFT: #FDE3A7;
   display: none;
 }
 
+.topBorder {
+  border-top: 1px solid #ccc;
+} 
+
+.bottomBorder {
+  border-bottom: 1px solid #ccc;
+}
+
+/* STYLES START HERE */
+
+
+.jh {
+
+}
 
 
 
@@ -191,25 +150,415 @@ $headerYellowFT: #FDE3A7;
 
 
 
+.jh {
+
+  &-main-header {
+    overflow: hidden;
+    position: fixed;
+    color: white;
+    background-color: $headerOrangeBG;
+    z-index: 5;
+    & > * {
+      margin: 12px auto;
+      text-align: center;
+    }
+    &__title {
+      font-family: 'Oleo Script', cursive;
+      font-size: 5rem;
+      width: 70%;
+    }
+    &__icon {
+      margin-top: 28px;
+      width: 15%;
+      // important is overriding the material icon fonts
+      font-size: 5rem!important;
+    }
+  }
+
+  // MAIN NAVIGATION
+
+  &-main-navigation {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.06), 0 10px 10px rgba(0,0,0,0.04);
+    position: fixed;
+    z-index: 5;
+    &__item {
+      font-family: 'Oleo Script', cursive;
+      font-size: 3.4rem;
+      color: white;
+      border-top: 1px solid white;
+      h1 {
+        margin: 1.2rem;
+        text-align: center;
+      }
+      &--about-me {
+        background-color: $headerRedBG;
+      }
+      &--projects {
+        background-color: $headerBlueBG;
+      }
+      &--skills {
+        background-color: $headerGreenBG; 
+      }
+      &--contact {
+        background-color: $headerPurpleBG;
+      }
+    }
+  }
+
+      $aboutMeColor: $headerRedBG;
+      $projectsColor: $headerBlueBG;
+      $skillsColor: $headerGreenBG; 
+      $contactColor: $headerPurpleBG;
+
+  &-page-section {
+    // universal page section settings
+    // &--about-me { display: none; }
+
+
+
+
+    margin-bottom: 30px;
+    &__top-header {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.06), 0 10px 10px rgba(0,0,0,0.04);
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+     
+      &--about-me {
+        background-color: $aboutMeColor;
+        background: linear-gradient(to left, $aboutMeColor 40%, transparent), url("../screenshots/aboutMeBg.jpg") no-repeat left;
+        background-size: contain;
+      }
+      &--projects {
+        background-color: $projectsColor;
+      }
+      &--skills {
+        background-color: $skillsColor; 
+      }
+      &--contact {
+        background-color: $contactColor;
+      }
+
+    }
+    // top title font settings
+    &__top-title {
+      color: white;
+      text-align: right;
+      font-family: 'Oleo Script', cursive;
+      font-size: 3.4rem;
+      margin: 0!important;
+      padding: 25px 0;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  &-about-me {
+    padding: 20px;
+    &__header {
+    
+    }
+    &__title {
+      font-size: 3.5rem;
+      text-align: right;
+      line-height: 3rem;
+      margin-bottom: 1.7rem;;
+    }
+    &__description {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      line-height: 2rem; 
+    }
+    &__description-paragraph {
+     
+    }
+    &__quote {
+      
+    }
+    &__quote-saying {
+      font-weight: 800;
+      margin-bottom: 0;
+    }
+    &__quote-person {
+      text-align: right;
+      margin-top: 0;
+    }
+  }
+
+
+  &-projects {
+    margin-top: 25px;
+  }
+
+  &-project {
+    padding-bottom: 15px;
+    border: 1px solid transparent;
+    &__header {
+      background-color: $headerVibRedBG;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      padding: 10px 0;
+      margin: 0;
+    }
+    &__header-title {
+      margin: 0;
+    }
+    &__information {
+      margin-top: 20px;
+    }
+    &__gallery {
+     background-color: $white; 
+     padding: 20px;
+     border: 2px solid $headerVibRedBG;
+     border-bottom: 0;
+    }
+    &__thumbnail {
+      border-bottom: 2px solid black;
+       &--active {
+
+      }
+      &--inactive {
+        display: none;
+      }
+    }
+    &__gallery-button {
+      padding: 2px 0;
+      font-size: 1.3rem;
+      border: 2px solid $headerVibRedBG;
+      &--active {
+        background-color: $white;
+        color: $headerVibRedBG;
+      }
+      &--inactive {
+        background-color: $headerVibRedBG;
+        color: $white;
+        &:hover {
+          background-color: $white;
+          color: $headerVibRedBG;
+          cursor: pointer;
+        }
+      }
+    }
+    &__detail {
+    
+    }
+    &__description {
+      &--active {
+        
+      }
+      &--inactive {
+        display: none;
+      }
+    }
+    &__details-button {
+      background-color: transparent;
+      border: 0;
+      font-weight: 800;
+      font-size: 1.7rem;
+    }
+    &--active {
+      .jh-project__header {
+        color: $headerYellowFT;
+      }
+    }
+    &--inactive {
+      padding-bottom: 0;
+      .jh-project__information {
+        display: none;
+      }
+    }
+  }
+
+  &-skills {
+
+  }
+
+  &-skill {
+    margin-bottom: 50px;
+    &__header {
+
+    }
+    &__title {
+      text-align: center;
+      font-size: 1.7rem;
+    }
+    &__main {
+      height: 250px;
+      border-bottom: 2px solid black;
+    }
+    &__rating-labels {
+      height: 100%;
+    }
+    &__rating-label {
+      text-align: center;
+      padding-top: 15px;
+      height: 25%;
+    }
+    &__score-chart {
+      height: 100%;
+      &--purple {
+        .jh-skill__chart-level:nth-child(1) {
+          &::after {
+            background-color: #8E44AD;
+          }
+        }
+        .jh-skill__chart-level:nth-child(2) {
+          &::after {
+            background-color: #913D88;
+          }
+        }
+        .jh-skill__chart-level:nth-child(3) {
+          &::after {
+            background-color: #663399;
+          }
+        }
+        .jh-skill__chart-level:nth-child(4) {
+          &::after {
+            background-color: #674172;
+          }
+        }
+      }
+      &--green {
+        .jh-skill__chart-level:nth-child(1) {
+          &::after {
+            background-color: #339D72;
+          }
+        }
+        .jh-skill__chart-level:nth-child(2) {
+          &::after {
+            background-color: #339685;
+          }
+        }
+        .jh-skill__chart-level:nth-child(3) {
+          &::after {
+            background-color: #489B7C;
+          }
+        }
+        .jh-skill__chart-level:nth-child(4) {
+          &::after {
+            background-color: #469F8F;
+          }
+        }
+      }
+      &--blue {
+        .jh-skill__chart-level:nth-child(1) {
+          &::after {
+            background-color: #337DB9;
+          }
+        }
+        .jh-skill__chart-level:nth-child(2) {
+          &::after {
+            background-color: #487BC3;
+          }
+        }
+        .jh-skill__chart-level:nth-child(3) {
+          &::after {
+            background-color: #3376CC;
+          }
+        }
+        .jh-skill__chart-level:nth-child(4) {
+          &::after {
+            background-color: #467FD6;
+          }
+        }
+      }
+    }
+    &__chart {
+      position: relative;
+    }
+    &__chart-level {
+      // position: relative;
+      text-align: center;
+      height: 100%;
+      &::after {
+        content: "";
+        display: block;
+        background-color: green;
+      }
+      &::before {
+        content: "";
+        display: block;
+        background-color: transparent;
+      }
+      &--levelOne {
+        &::after {
+          height: 15%;
+        }
+        &::before {
+          height: 85%;
+        }
+      }
+      &--levelTwo {
+        &::after {
+          height: 35%;
+        }
+        &::before {
+          height: 65%;
+        }    
+      }
+      &--levelThree {
+        &::after {
+          height: 65%;
+        }
+        &::before {
+          height: 35%;
+        }
+      }
+      &--levelFour {
+        &::after {
+          height: 85%;
+        }
+        &::before {
+          height: 15%;
+        }
+      }
+    }
+    &__score-categories {
+    
+    }
+    &__category-label {
+      position: relative;
+      top: 30px;
+    }
+    &__category-title {
+      font-size: 1.2rem;
+      transform: rotate(45deg);
+      font-weight: 800;
+      white-space: nowrap;
+      text-align: left;
+    }
+  }
 
 
 
 
 
-/*
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
 
+
+
+
+
+  &-main-footer {
+    text-align: center;
+    padding-bottom: 20px;
+    color: $headerOrangeBG;
+    &__text {
+      text-align: center;
+      font-weight: 800;
+      font-size: 1.7rem;
+    }
+    &__icon {
+      vertical-align: middle;
+      font-size: 2rem!important;
+      padding-right: 5px;
+    }
+  }
+}
+
+
+
+
+/* STYLES END HERE */
 
 /* Larger than mobile */
 @media (min-width: 400px) {

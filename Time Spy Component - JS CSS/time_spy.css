@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+body {
+  font-family: 'Roboto', sans-serif; }
+
+#content {
+  width: 66%;
+  position: relative;
+  left: 16.175%; }
+  #content > p {
+    letter-spacing: 1.3px;
+    line-height: 1.5; }
+
+#scrollspy {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: .85;
+  position: absolute;
+  left: -100px;
+  color: #darkslate;
+  top: 0; }
+  #scrollspy p {
+    margin: 0; }
+  #scrollspy > div {
+    background-color: steelblue;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 60px; }
+    #scrollspy > div:first-child {
+      margin-bottom: 5px; }
+    #scrollspy > div > p:first-child {
+      font-size: 40px; }

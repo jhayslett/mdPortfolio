@@ -30,12 +30,8 @@ section {
 /*  SECTION COLORS   */
 /*        TYPOGRAPHY        */
 /*       GRID        */
-.row {
-  border: 1.5px solid green; }
-
 [class*="col-"] {
   float: left;
-  border: 1px solid red;
   width: 100%;
   vertical-align: middle; }
 
@@ -45,92 +41,89 @@ section {
   clear: both;
   display: table; }
 
-@media (min-width: 550px) {
-  .col-1 {
-    width: 8.33%; }
-  .col-2 {
-    width: 16.66%; }
-  .col-3 {
-    width: 25%; }
-  .col-4 {
-    width: 33.33%; }
-  .col-5 {
-    width: 41.66%; }
-  .col-6 {
-    width: 50%; }
-  .col-7 {
-    width: 58.33%; }
-  .col-8 {
-    width: 66.66%; }
-  .col-9 {
-    width: 75%; }
-  .col-10 {
-    width: 83.33%; }
-  .col-11 {
-    width: 91.66%; }
-  .col-12 {
-    width: 100%; }
-  .offsetBy-1 {
-    margin-left: 8.33%; }
-  .offsetBy-2 {
-    margin-left: 16.66%; }
-  .offsetBy-3 {
-    margin-left: 25%; }
-  .offsetBy-4 {
-    margin-left: 33.33%; }
-  .offsetBy-5 {
-    margin-left: 41.66%; }
-  .offsetBy-6 {
-    margin-left: 50%; }
-  .offsetBy-7 {
-    margin-left: 58.33%; }
-  .offsetBy-8 {
-    margin-left: 66.66%; }
-  .offsetBy-9 {
-    margin-left: 75%; }
-  .offsetBy-10 {
-    margin-left: 83.33%; }
-  .offsetBy-11 {
-    margin-left: 91.66%; }
-  .offsetBy-12 {
-    margin-left: 100%; }
-  .offsetBy-halfColumn {
-    margin-left: 4.165%; } }
+.col-1 {
+  width: 8.33%; }
 
-/*         ICONS          */
-/* Rules for sizing the icon. */
-.material-icons.md-18 {
-  font-size: 18px; }
+.col-15 {
+  width: 12.495%; }
 
-.material-icons.md-24 {
-  font-size: 24px; }
+.col-2 {
+  width: 16.66%; }
 
-.material-icons.md-36 {
-  font-size: 36px; }
+.col-3 {
+  width: 25%; }
 
-.material-icons.md-48 {
-  font-size: 48px; }
+.col-4 {
+  width: 33.33%; }
 
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark {
-  color: rgba(0, 0, 0, 0.54); }
+.col-5 {
+  width: 41.66%; }
 
-.material-icons.md-dark.md-inactive {
-  color: rgba(0, 0, 0, 0.26); }
+.col-6 {
+  width: 50%; }
 
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light {
-  color: white; }
+.col-7 {
+  width: 58.33%; }
 
-.material-icons.md-light.md-inactive {
-  color: rgba(255, 255, 255, 0.3); }
+.col-8 {
+  width: 66.66%; }
 
-/*        CENTER ELEMENTS AND TEXT        */
-.cEl {
-  margin: auto; }
+.col-9 {
+  width: 75%; }
 
-.cTxt {
-  text-align: center; }
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.offsetBy-1 {
+  margin-left: 8.33%; }
+
+.offsetBy-15 {
+  margin-left: 12.495%; }
+
+.offsetBy-2 {
+  margin-left: 16.66%; }
+
+.offsetBy-25 {
+  margin-left: 20.825%; }
+
+.offsetBy-3 {
+  margin-left: 25%; }
+
+.offsetBy-4 {
+  margin-left: 33.33%; }
+
+.offsetBy-5 {
+  margin-left: 41.66%; }
+
+.offsetBy-6 {
+  margin-left: 50%; }
+
+.offsetBy-7 {
+  margin-left: 58.33%; }
+
+.offsetBy-8 {
+  margin-left: 66.66%; }
+
+.offsetBy-9 {
+  margin-left: 75%; }
+
+.offsetBy-10 {
+  margin-left: 83.33%; }
+
+.offsetBy-11 {
+  margin-left: 91.66%; }
+
+.offsetBy-12 {
+  margin-left: 100%; }
+
+.offsetBy-halfColumn {
+  margin-left: 4.165%; }
 
 /*      DEFAULT STATES         */
 .hidden {
@@ -145,19 +138,243 @@ section {
 .inactive main {
   display: none; }
 
-/*
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
+.topBorder {
+  border-top: 1px solid #ccc; }
+
+.bottomBorder {
+  border-bottom: 1px solid #ccc; }
+
+/* STYLES START HERE */
+.jh-main-header {
+  overflow: hidden;
+  position: fixed;
+  color: white;
+  background-color: #F89406;
+  z-index: 5; }
+  .jh-main-header > * {
+    margin: 12px auto;
+    text-align: center; }
+  .jh-main-header__title {
+    font-family: 'Oleo Script', cursive;
+    font-size: 5rem;
+    width: 70%; }
+  .jh-main-header__icon {
+    margin-top: 28px;
+    width: 15%;
+    font-size: 5rem !important; }
+
+.jh-main-navigation {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06), 0 10px 10px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  z-index: 5; }
+  .jh-main-navigation__item {
+    font-family: 'Oleo Script', cursive;
+    font-size: 3.4rem;
+    color: white;
+    border-top: 1px solid white; }
+    .jh-main-navigation__item h1 {
+      margin: 1.2rem;
+      text-align: center; }
+    .jh-main-navigation__item--about-me {
+      background-color: #E74C3C; }
+    .jh-main-navigation__item--projects {
+      background-color: #446CB3; }
+    .jh-main-navigation__item--skills {
+      background-color: #1E824C; }
+    .jh-main-navigation__item--contact {
+      background-color: #663399; }
+
+.jh-page-section {
+  margin-bottom: 30px; }
+  .jh-page-section__top-header {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06), 0 10px 10px rgba(0, 0, 0, 0.04);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; }
+    .jh-page-section__top-header--about-me {
+      background-color: #E74C3C;
+      background: linear-gradient(to left, #E74C3C 40%, transparent), url("../screenshots/aboutMeBg.jpg") no-repeat left;
+      background-size: contain; }
+    .jh-page-section__top-header--projects {
+      background-color: #446CB3; }
+    .jh-page-section__top-header--skills {
+      background-color: #1E824C; }
+    .jh-page-section__top-header--contact {
+      background-color: #663399; }
+  .jh-page-section__top-title {
+    color: white;
+    text-align: right;
+    font-family: 'Oleo Script', cursive;
+    font-size: 3.4rem;
+    margin: 0 !important;
+    padding: 25px 0;
+    letter-spacing: 1.2px; }
+
+.jh-about-me {
+  padding: 20px; }
+  .jh-about-me__title {
+    font-size: 3.5rem;
+    text-align: right;
+    line-height: 3rem;
+    margin-bottom: 1.7rem; }
+  .jh-about-me__description {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 2rem; }
+  .jh-about-me__quote-saying {
+    font-weight: 800;
+    margin-bottom: 0; }
+  .jh-about-me__quote-person {
+    text-align: right;
+    margin-top: 0; }
+
+.jh-projects {
+  margin-top: 25px; }
+
+.jh-project {
+  padding-bottom: 15px;
+  border: 1px solid transparent; }
+  .jh-project__header {
+    background-color: #F62459;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    margin: 0; }
+  .jh-project__header-title {
+    margin: 0; }
+  .jh-project__information {
+    margin-top: 20px; }
+  .jh-project__gallery {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #F62459;
+    border-bottom: 0; }
+  .jh-project__thumbnail {
+    border-bottom: 2px solid black; }
+    .jh-project__thumbnail--inactive {
+      display: none; }
+  .jh-project__gallery-button {
+    padding: 2px 0;
+    font-size: 1.3rem;
+    border: 2px solid #F62459; }
+    .jh-project__gallery-button--active {
+      background-color: #fff;
+      color: #F62459; }
+    .jh-project__gallery-button--inactive {
+      background-color: #F62459;
+      color: #fff; }
+      .jh-project__gallery-button--inactive:hover {
+        background-color: #fff;
+        color: #F62459;
+        cursor: pointer; }
+  .jh-project__description--inactive {
+    display: none; }
+  .jh-project__details-button {
+    background-color: transparent;
+    border: 0;
+    font-weight: 800;
+    font-size: 1.7rem; }
+  .jh-project--active .jh-project__header {
+    color: #FDE3A7; }
+  .jh-project--inactive {
+    padding-bottom: 0; }
+    .jh-project--inactive .jh-project__information {
+      display: none; }
+
+.jh-skill {
+  margin-bottom: 50px; }
+  .jh-skill__title {
+    text-align: center;
+    font-size: 1.7rem; }
+  .jh-skill__main {
+    height: 250px;
+    border-bottom: 2px solid black; }
+  .jh-skill__rating-labels {
+    height: 100%; }
+  .jh-skill__rating-label {
+    text-align: center;
+    padding-top: 15px;
+    height: 25%; }
+  .jh-skill__score-chart {
+    height: 100%; }
+    .jh-skill__score-chart--purple .jh-skill__chart-level:nth-child(1)::after {
+      background-color: #8E44AD; }
+    .jh-skill__score-chart--purple .jh-skill__chart-level:nth-child(2)::after {
+      background-color: #913D88; }
+    .jh-skill__score-chart--purple .jh-skill__chart-level:nth-child(3)::after {
+      background-color: #663399; }
+    .jh-skill__score-chart--purple .jh-skill__chart-level:nth-child(4)::after {
+      background-color: #674172; }
+    .jh-skill__score-chart--green .jh-skill__chart-level:nth-child(1)::after {
+      background-color: #339D72; }
+    .jh-skill__score-chart--green .jh-skill__chart-level:nth-child(2)::after {
+      background-color: #339685; }
+    .jh-skill__score-chart--green .jh-skill__chart-level:nth-child(3)::after {
+      background-color: #489B7C; }
+    .jh-skill__score-chart--green .jh-skill__chart-level:nth-child(4)::after {
+      background-color: #469F8F; }
+    .jh-skill__score-chart--blue .jh-skill__chart-level:nth-child(1)::after {
+      background-color: #337DB9; }
+    .jh-skill__score-chart--blue .jh-skill__chart-level:nth-child(2)::after {
+      background-color: #487BC3; }
+    .jh-skill__score-chart--blue .jh-skill__chart-level:nth-child(3)::after {
+      background-color: #3376CC; }
+    .jh-skill__score-chart--blue .jh-skill__chart-level:nth-child(4)::after {
+      background-color: #467FD6; }
+  .jh-skill__chart {
+    position: relative; }
+  .jh-skill__chart-level {
+    text-align: center;
+    height: 100%; }
+    .jh-skill__chart-level::after {
+      content: "";
+      display: block;
+      background-color: green; }
+    .jh-skill__chart-level::before {
+      content: "";
+      display: block;
+      background-color: transparent; }
+    .jh-skill__chart-level--levelOne::after {
+      height: 15%; }
+    .jh-skill__chart-level--levelOne::before {
+      height: 85%; }
+    .jh-skill__chart-level--levelTwo::after {
+      height: 35%; }
+    .jh-skill__chart-level--levelTwo::before {
+      height: 65%; }
+    .jh-skill__chart-level--levelThree::after {
+      height: 65%; }
+    .jh-skill__chart-level--levelThree::before {
+      height: 35%; }
+    .jh-skill__chart-level--levelFour::after {
+      height: 85%; }
+    .jh-skill__chart-level--levelFour::before {
+      height: 15%; }
+  .jh-skill__category-label {
+    position: relative;
+    top: 30px; }
+  .jh-skill__category-title {
+    font-size: 1.2rem;
+    transform: rotate(45deg);
+    font-weight: 800;
+    white-space: nowrap;
+    text-align: left; }
+
+.jh-main-footer {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #F89406; }
+  .jh-main-footer__text {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.7rem; }
+  .jh-main-footer__icon {
+    vertical-align: middle;
+    font-size: 2rem !important;
+    padding-right: 5px; }
+
+/* STYLES END HERE */
 /* Larger than mobile */
 /* Larger than phablet (also point when grid becomes active) */
 /* Larger than tablet */
