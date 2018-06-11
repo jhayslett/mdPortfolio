@@ -164,8 +164,7 @@ utilities.getAncestorBySelector = function(start,ancestor) {
     console.log("Ancestor Not Found");
     return;
   } else {
-    console.log(currentParent.parentElement);
-    return;
+    return(currentParent);
   }
 };
 

@@ -5,12 +5,15 @@
 
 * {
   box-sizing: border-box;
+  // border: 1px solid red;
 }
 
 html {
+  height: 100%;
   font-size: 62.5%; 
 }
 body {
+  height: 100%;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -31,6 +34,10 @@ section {
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 /*       COLORS       */
 
 $white: #fff;
@@ -45,6 +52,11 @@ $headerVibRedBG: #F62459;
 $headerGreenBG: #1E824C;
 $headerPurpleBG: #663399;
 $headerYellowFT: #FDE3A7;
+
+$aboutMeColor: $headerRedBG;
+$projectsColor: $headerBlueBG;
+$skillsColor: $headerGreenBG; 
+$contactColor: $headerPurpleBG;
 
 /*        TYPOGRAPHY        */
 
@@ -172,12 +184,15 @@ $headerYellowFT: #FDE3A7;
       width: 15%;
       // important is overriding the material icon fonts
       font-size: 5rem!important;
+      &:hover {
+        cursor: pointer;
+      } 
     }
   }
 
   // MAIN NAVIGATION
 
-  &-main-navigation {
+  &-main-navigation {   
     box-shadow: 0 14px 28px rgba(0,0,0,0.06), 0 10px 10px rgba(0,0,0,0.04);
     position: fixed;
     z-index: 5;
@@ -205,15 +220,9 @@ $headerYellowFT: #FDE3A7;
     }
   }
 
-      $aboutMeColor: $headerRedBG;
-      $projectsColor: $headerBlueBG;
-      $skillsColor: $headerGreenBG; 
-      $contactColor: $headerPurpleBG;
-
   &-page-section {
     // universal page section settings
     // &--about-me { display: none; }
-
 
 
 
@@ -225,8 +234,8 @@ $headerYellowFT: #FDE3A7;
      
       &--about-me {
         background-color: $aboutMeColor;
-        background: linear-gradient(to left, $aboutMeColor 40%, transparent), url("../screenshots/aboutMeBg.jpg") no-repeat left;
-        background-size: contain;
+        background: linear-gradient(to left, $aboutMeColor 40%, transparent), url("../images/aboutMeBg.jpg") no-repeat left, #222;
+        background-size: cover;
       }
       &--projects {
         background-color: $projectsColor;
@@ -260,7 +269,8 @@ $headerYellowFT: #FDE3A7;
       font-size: 3.5rem;
       text-align: right;
       line-height: 3rem;
-      margin-bottom: 1.7rem;;
+      margin-top: 2.5rem;
+      margin-bottom: 1.7rem;
     }
     &__description {
       border-top: 1px solid #ccc;
@@ -299,6 +309,9 @@ $headerYellowFT: #FDE3A7;
       letter-spacing: 1px;
       padding: 10px 0;
       margin: 0;
+      &:hover {
+        cursor: pointer;
+      }
     }
     &__header-title {
       margin: 0;
@@ -381,6 +394,7 @@ $headerYellowFT: #FDE3A7;
     &__title {
       text-align: center;
       font-size: 1.7rem;
+      margin-top: 30px;
     }
     &__main {
       height: 250px;
@@ -518,25 +532,162 @@ $headerYellowFT: #FDE3A7;
     }
     &__category-label {
       position: relative;
-      top: 30px;
+      left: 20px;
     }
     &__category-title {
       font-size: 1.2rem;
-      transform: rotate(45deg);
+      transform: rotate(55deg);
       font-weight: 800;
       white-space: nowrap;
       text-align: left;
+      transform-origin: left;
+
+    }
+  }
+
+  &-business-card {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    &--front-showing {
+      .jh-business-card--front {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        
+      }
+      .jh-business-card--back {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+      }
+      &:hover {
+        .jh-business-card--back {
+          -webkit-transform: rotateX(-198deg);
+          transform: rotateX(-198deg);
+        }
+      }
+    }
+    &--back-showing {
+      .jh-business-card--front {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+      }
+      .jh-business-card--back {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+      &:hover {
+        .jh-business-card--front {
+          -webkit-transform: rotateX(-198deg);
+          transform: rotateX(-198deg);
+        }
+      }
+    }
+    & > * {
+      padding: 3rem 3rem 0 3rem;
+      border-radius: 6px;
+      -webkit-transition: all 600ms;
+      transition: all 600ms;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility:    hidden;
+      -ms-backface-visibility:     hidden;
+      &:hover {
+        -webkit-transform: rotateX(18deg);
+        transform: rotateX(18deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);  
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &--front {
+      width: 100%;
+      position: absolute;
+      background: url("../images/dunder1.jpg") no-repeat center center; 
+      background-size: cover;
+      
+    }
+    &--back {
+      background-image: url("https://github.com/jhayslett/sg-tools/blob/master/bg2.png?raw=true"); 
+        background-size: cover;
+      display: block;
+      position: absolute;
+      color: white;
     }
   }
 
 
+  &-card-front {
+    &__name {
+      font-size: 2rem;
+      color: lighten($headerPurpleBG, 27);
+      font-weight: 200;
+      padding: 5px 10px;
+      position: absolute;
+      bottom: 20px;
+      background-color: rgba(0,0,0,.9);
+      border-radius: 10px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  &-card-back {
 
-
-
-
-
-
-
+    &__name {
+      font-size: 4rem;
+      font-weight: 200;
+      margin: 0;
+      line-height: 3.5rem;
+    }
+    &__work-title {
+      color: #787878;
+      font-size: 1.7rem;
+      margin: 0;
+    }
+    &__description {
+      font-size: 1.7rem;
+      line-height: 2rem;
+    }
+    &__main-contact {
+      font-size: 1.5rem;
+    }
+    &__email,
+    &__website,
+    &__study {
+      color: #9858E2;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+    &__website {
+      margin-left: 10px;
+    }
+    &__social-media {
+      margin: 20px 0;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &__footer-name {
+      margin: 0;
+    }
+    &__icon:first-child {
+      padding-right: 1rem;
+    }
+    &__icon:nth-child(n+2) {
+      float: right;
+      padding-left: 20px;
+    }
+  }
 
   &-main-footer {
     text-align: center;
@@ -554,9 +705,6 @@ $headerYellowFT: #FDE3A7;
     }
   }
 }
-
-
-
 
 /* STYLES END HERE */
 

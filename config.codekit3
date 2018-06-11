@@ -557,6 +557,39 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/images\/aboutMeBg.JPG": {
+		"ft": 16384,
+		"iS": 1079112,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/aboutMeBg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/dunder1.jpg": {
+		"ft": 16384,
+		"iS": 448995,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/dunder1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/headerBg.jpg": {
+		"ft": 16384,
+		"iS": 1427,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/headerBg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,

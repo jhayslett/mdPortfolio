@@ -4,9 +4,11 @@
   box-sizing: border-box; }
 
 html {
+  height: 100%;
   font-size: 62.5%; }
 
 body {
+  height: 100%;
   font-size: 1.5em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -25,6 +27,9 @@ menu,
 nav,
 section {
   display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
 
 /*       COLORS       */
 /*  SECTION COLORS   */
@@ -162,6 +167,8 @@ section {
     margin-top: 28px;
     width: 15%;
     font-size: 5rem !important; }
+    .jh-main-header__icon:hover {
+      cursor: pointer; }
 
 .jh-main-navigation {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06), 0 10px 10px rgba(0, 0, 0, 0.04);
@@ -192,8 +199,8 @@ section {
     border-bottom: 2px solid white; }
     .jh-page-section__top-header--about-me {
       background-color: #E74C3C;
-      background: linear-gradient(to left, #E74C3C 40%, transparent), url("../screenshots/aboutMeBg.jpg") no-repeat left;
-      background-size: contain; }
+      background: linear-gradient(to left, #E74C3C 40%, transparent), url("../images/aboutMeBg.jpg") no-repeat left, #222;
+      background-size: cover; }
     .jh-page-section__top-header--projects {
       background-color: #446CB3; }
     .jh-page-section__top-header--skills {
@@ -215,6 +222,7 @@ section {
     font-size: 3.5rem;
     text-align: right;
     line-height: 3rem;
+    margin-top: 2.5rem;
     margin-bottom: 1.7rem; }
   .jh-about-me__description {
     border-top: 1px solid #ccc;
@@ -241,6 +249,8 @@ section {
     letter-spacing: 1px;
     padding: 10px 0;
     margin: 0; }
+    .jh-project__header:hover {
+      cursor: pointer; }
   .jh-project__header-title {
     margin: 0; }
   .jh-project__information {
@@ -286,7 +296,8 @@ section {
   margin-bottom: 50px; }
   .jh-skill__title {
     text-align: center;
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    margin-top: 30px; }
   .jh-skill__main {
     height: 250px;
     border-bottom: 2px solid black; }
@@ -353,13 +364,125 @@ section {
       height: 15%; }
   .jh-skill__category-label {
     position: relative;
-    top: 30px; }
+    left: 20px; }
   .jh-skill__category-title {
     font-size: 1.2rem;
-    transform: rotate(45deg);
+    transform: rotate(55deg);
     font-weight: 800;
     white-space: nowrap;
-    text-align: left; }
+    text-align: left;
+    transform-origin: left; }
+
+.jh-business-card {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden; }
+  .jh-business-card--front-showing .jh-business-card--front {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg); }
+  .jh-business-card--front-showing .jh-business-card--back {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg); }
+  .jh-business-card--front-showing:hover .jh-business-card--back {
+    -webkit-transform: rotateX(-198deg);
+    transform: rotateX(-198deg); }
+  .jh-business-card--back-showing .jh-business-card--front {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg); }
+  .jh-business-card--back-showing .jh-business-card--back {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg); }
+  .jh-business-card--back-showing:hover .jh-business-card--front {
+    -webkit-transform: rotateX(-198deg);
+    transform: rotateX(-198deg); }
+  .jh-business-card > * {
+    padding: 3rem 3rem 0 3rem;
+    border-radius: 6px;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden; }
+    .jh-business-card > *:hover {
+      -webkit-transform: rotateX(18deg);
+      transform: rotateX(18deg);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+  .jh-business-card:hover {
+    cursor: pointer; }
+  .jh-business-card--front {
+    width: 100%;
+    position: absolute;
+    background: url("../images/dunder1.jpg") no-repeat center center;
+    background-size: cover; }
+  .jh-business-card--back {
+    background-image: url("https://github.com/jhayslett/sg-tools/blob/master/bg2.png?raw=true");
+    background-size: cover;
+    display: block;
+    position: absolute;
+    color: white; }
+
+.jh-card-front__name {
+  font-size: 2rem;
+  color: #ab81d5;
+  font-weight: 200;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.jh-card-back__name {
+  font-size: 4rem;
+  font-weight: 200;
+  margin: 0;
+  line-height: 3.5rem; }
+
+.jh-card-back__work-title {
+  color: #787878;
+  font-size: 1.7rem;
+  margin: 0; }
+
+.jh-card-back__description {
+  font-size: 1.7rem;
+  line-height: 2rem; }
+
+.jh-card-back__main-contact {
+  font-size: 1.5rem; }
+
+.jh-card-back__email, .jh-card-back__website, .jh-card-back__study {
+  color: #9858E2;
+  text-decoration: none; }
+  .jh-card-back__email:hover, .jh-card-back__website:hover, .jh-card-back__study:hover {
+    color: white; }
+
+.jh-card-back__website {
+  margin-left: 10px; }
+
+.jh-card-back__social-media {
+  margin: 20px 0; }
+  .jh-card-back__social-media > * {
+    display: inline-block;
+    vertical-align: middle; }
+
+.jh-card-back__footer-name {
+  margin: 0; }
+
+.jh-card-back__icon:first-child {
+  padding-right: 1rem; }
+
+.jh-card-back__icon:nth-child(n+2) {
+  float: right;
+  padding-left: 20px; }
 
 .jh-main-footer {
   text-align: center;
