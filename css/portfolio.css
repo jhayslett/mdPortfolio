@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 2px solid white; }
     .jh-page-section__top-header--about-me {
       background-color: #E74C3C;
-      background: linear-gradient(to left, #E74C3C 40%, transparent), url("https://github.com/jhayslett/mdPortfolio/blob/master/images/aboutMeBg.JPG") no-repeat left, #222;
+      background: linear-gradient(to left, #E74C3C 40%, transparent), url("https://github.com/jhayslett/mdPortfolio/blob/master/images/aboutMeBg.JPG?raw=true") no-repeat left, #222;
       background-size: cover; }
     .jh-page-section__top-header--projects {
       background-color: #446CB3; }
