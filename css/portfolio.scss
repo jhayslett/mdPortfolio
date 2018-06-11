@@ -234,7 +234,7 @@ $contactColor: $headerPurpleBG;
      
       &--about-me {
         background-color: $aboutMeColor;
-        background: linear-gradient(to left, $aboutMeColor 40%, transparent), url("../images/aboutMeBg.jpg") no-repeat left, #222;
+        background: linear-gradient(to left, $aboutMeColor 40%, transparent), url("https://github.com/jhayslett/mdPortfolio/blob/master/images/aboutMeBg.JPG") no-repeat left, #222;
         background-size: cover;
       }
       &--projects {
